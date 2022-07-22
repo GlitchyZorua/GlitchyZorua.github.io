@@ -12,6 +12,6 @@ Jacobw0.github.io/api/retrojbot/thank you.txt - Landing page for when you invite
 
 Create a .env (no name, just .env) file and add these lines:
 
-TOKEN=<Your token> - For logging into the bot.
+TOKEN=\<Your token\> - For logging into the bot.
 
-PREFIX=<prefix> - Prefix for the bot 
+PREFIX=\<prefix\> - Prefix for the bot 
