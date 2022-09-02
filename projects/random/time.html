@@ -5,7 +5,11 @@
 <h2>My First JavaScript</h2>
 
 <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
+onclick="var myDate = new Date(1633071599000)
+var pstDate = myDate.toLocaleString("en-US", {
+  timeZone: "America/Los_Angeles"
+})
+console.log(pstDate)">
 Click me to display Date and Time.</button>
 
 <p id="demo"></p>
