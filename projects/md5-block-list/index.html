@@ -1,0 +1,26 @@
+<script src="https://Jacobw0.github.io/projects/md5-block-list/md5.js"></script>
+<script>
+
+var a = ""
+const array = ["0","1"];
+var output = prompt("?", "");  
+if (output === ""){
+alert('You must type something in!')
+return
+}
+let newArray = array.filter(MD5(a));
+if (newArray === output){
+alert('You are blocked. To appeal, you will need to contact the owner.')
+return
+} else {
+alert('You are not blocked.')
+return
+}
+/** NON ENGLISH words**/
+//value = 'מבחן'
+
+//unescape() can be deprecated for the new browser versions
+//result = MD5(unescape(encodeURIComponent(value)));
+
+//document.body.innerHTML += '<br><br>hash - non english words: ' + result;
+</script>
