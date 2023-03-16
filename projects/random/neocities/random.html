@@ -1033,8 +1033,10 @@ var webList = [
 ]
 
 var random = webList[Math.floor(Math.random() * webList.length)];
+/*/
 var win = window.open(random, '_blank');
 win.focus();
-
+/*/
+      window.location.replace(random);
     </script>
 </html>
