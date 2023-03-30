@@ -5,17 +5,11 @@ alert('hi')
 var output = prompt("enter ur id", "");  
 var a = "50aec9d41bdc4d52e1124d823878176e"
 const array = ["0","1"];
-if (output === ""){
-alert('You must type something in!')
-return
-}
 let input = array.filter(MD5(a));
 if (input === output){
 alert('You are blocked.');
-return
 } else {
 alert('You are not blocked.');
-return
 }
 /** NON ENGLISH words**/
 //value = 'מבחן'
