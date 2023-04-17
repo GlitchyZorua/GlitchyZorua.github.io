@@ -1,2 +1,2 @@
 # Jacobw0.github.io
-Nothing much i guess...
+a mirror site of https://retrojcities.neocities.org/ incase something goes horribly wrong
