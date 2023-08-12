@@ -1,4 +1,7 @@
 var msg = [
+  "AND HIS NAME IS JOHN CEEEEEENNNAAA",
+  "ITS RAINING TACOS",
+  "how do i use mastodon im 25 years old is it facebook?!!?!?!?",
   "asbestos",
   "hi how do i use neocities its so confusing idk html please ok thanks",
   "I can imagine Joe britt wearing a maid outfit made with asbestos - GlitchyZorua",
