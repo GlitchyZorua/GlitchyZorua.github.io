@@ -1,4 +1,13 @@
-var msg = [
+var splashes = [
+  "you suck at programming",
+  "please do not cum on your steam deck",
+  "Message of The Day",
+  "splashes",
+  "Anything Else?",
+  "fixed - Notch",
+  "buy minecraft",
+  `splashes[Math.floor(Math.random() * splashes.length)]`,
+  "buy skyrim",
   "made by an fuwwy UwU",
   "2b2t is the oldest anarchy server in minecraft -Fit",
   "AND HIS NAME IS JOHN CEEEEEENNNAAA",
@@ -18,3 +27,4 @@ var msg = [
   "firefox > chrome",
   "if you're feeling useless, just remember that social media exist",
 ]
+var splashes = splashes[Math.floor(Math.random() * splashes.length)]
