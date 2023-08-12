@@ -1,4 +1,5 @@
 var msg = [
+  "i love hugs :3",
   "brb taking a shit - Notch",
   "Hello!",
   "Hi!",
