@@ -1,4 +1,5 @@
 var msg = [
+  "2b2t is the oldest anarchy server in minecraft -Fit",
   "AND HIS NAME IS JOHN CEEEEEENNNAAA",
   "ITS RAINING TACOS",
   "how do i use mastodon im 25 years old is it facebook?!!?!?!?",
