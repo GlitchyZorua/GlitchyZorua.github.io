@@ -1,4 +1,9 @@
 var msg = [
+  "asbestos",
+  "hi how do i use neocities its so confusing idk html please ok thanks",
+  "I can imagine Joe britt wearing a maid outfit made with asbestos - GlitchyZorua",
+  "sus",
+  "test",
   "MicrOwOsoft WindOwOs",
   "i love hugs :3",
   "brb taking a shit - Notch",
