@@ -22,7 +22,6 @@ console.log(
 )
 } 
 
-/*/
     // please note, 
 // that IE11 now returns undefined again for window.chrome
 // and new Opera 30 outputs true for window.chrome
@@ -38,7 +37,7 @@ var isIEedge = winNav.userAgent.indexOf("Edg") > -1;
 var isIOSChrome = winNav.userAgent.match("CriOS");
 
 if (isIOSChrome) {
-   alert("For the best experience, please use Mozilla Firefox. \(No, really, we hate Google Chrome.\), also why the hell are you viewing this on iOS?!");
+     window.location.replace("/pages/chrome.html");
 } else if(
   isChromium !== null &&
   typeof isChromium !== "undefined" &&
@@ -46,11 +45,10 @@ if (isIOSChrome) {
   isOpera === false &&
   isIEedge === false
 ) {
-   alert("For the best experience, please use Mozilla Firefox. \(No, really, we hate Google Chrome.\)");
+  window.location.replace("/pages/chrome.html");
 } else { 
    // not Google Chrome 
 }
-/*/
 </script>
 <br>
 <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:180px;height:60px;"src="https://www.clocklink.com/html5embed.php?clock=004&timezone=PST&color=white&size=180&Title=&Message=&Target=&From=2023,1,1,0,0,0&Color=white"></iframe>
