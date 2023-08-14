@@ -37,6 +37,7 @@ var isIEedge = winNav.userAgent.indexOf("Edg") > -1;
 var isIOSChrome = winNav.userAgent.match("CriOS");
 
 if (isIOSChrome) {
+    // fuck off
      window.location.replace("/pages/chrome.html");
 } else if(
   isChromium !== null &&
@@ -45,10 +46,24 @@ if (isIOSChrome) {
   isOpera === false &&
   isIEedge === false
 ) {
-  window.location.replace("/pages/chrome.html");
+  window.location.replace("/pages/chrome.html"); // fuck off
 } else { 
    // not Google Chrome 
 }
+function isChromiumGoFuckYourselfMicrosoftEdge() {
+    for (brand_version_pair of navigator.userAgentData.brands) {
+        if (brand_version_pair.brand == "Chromium"){
+            // fuck off
+            window.location.replace("/pages/chrome.html");
+        }
+    }
+}
+
+ // ok so apparently fucking microsoft edge was able to bypass this. 
+ // this is a hack, but it should work.
+isChromiumGoFuckYourselfMicrosoftEdge();
+
+// ITS TWO DIFFERENT FUCKING CHECKS OFC THIS IS GOING TO WORK AAAAAAAA
 </script>
 <br>
 <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:180px;height:60px;"src="https://www.clocklink.com/html5embed.php?clock=004&timezone=PST&color=white&size=180&Title=&Message=&Target=&From=2023,1,1,0,0,0&Color=white"></iframe>
@@ -175,6 +190,12 @@ if (isIOSChrome) {
     <br>
     <a href="javascript:(function () {var s = document.createElement('script');s.setAttribute('src', 'http://fontbomb.ilex.ca/js/main.js');document.body.appendChild(s);}());">FontBomb</a>
     <br><br>
+     <h2> Edit shit out! </h2>
+    <i> changes won't be saved ones you refresh the page </i>
+    <br>
+    <br>
+    <a href="javascript:if(document.body.contentEditable != 'true')void(document.body.contentEditable = 'true');else void(document.body.contentEditable = 'false');">Toggle edit mode</a>
+    <br>
     <iframe width="300" height="250" style="border:none" src="https://googol.neocities.org/neolink/embed.html" name="neolink"></iframe>
     <br><br><br>
     <embed src="/pages/moon.html" width="222" height="161"> 
@@ -195,7 +216,7 @@ if (isIOSChrome) {
     <b> THE END </b>
     <p>Copyleft - All rights reversed 2021 - 2023 🄯</p>
     <p>Hosted by GitHub Sites</p>
-    <a href="https://github.com/GlitchyZorua"><p>GitHub Profile </a> | <a href="./index.html">Home page</a> | <a href="https://docs.github.com/site-policy/github-terms/github-terms-of-service">GitHub Terms of Service</a> | <a href="https://retrojcities.neocities.org/">Switch to Neocities</a><a href="https://github.com/GlitchyZorua/GlitchyZorua.github.io">Source Code</a>
+    <a href="https://github.com/GlitchyZorua"><p>GitHub Profile </a> | <a href="./index.html">Home page</a> | <a href="https://docs.github.com/site-policy/github-terms/github-terms-of-service">GitHub Terms of Service</a> | <a href="https://retrojcities.neocities.org/">Switch to Neocities</a><p> | </p><a href="https://github.com/GlitchyZorua/GlitchyZorua.github.io">Source Code</a>
     </footer>
     <!--- http://toastytech.com/evil/buttons.html --->
  </body>
