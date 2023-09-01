@@ -111,12 +111,16 @@ checkNOTCookie();
   gonc = document.getElementById('gonc');
   luck = document.getElementById('luck');
   function searchstartpage() {
-  if (url.value) {
+  if (url.value == "") {
+    alert('You must type something in the search bar dummy');
+  }
     window.location.replace("https://www.startpage.com/sp/search?query=" + encodeURI(url.value));
   }
   }
   function searchneocities() {
-  if (url.value) {
+  if (url.value == "") {
+    alert('You must type something in the search bar dummy');
+  }
    window.location.replace("https://neocities.org/browse?sort_by=followers&tag=" + encodeURI(url.value));
   }
   }
@@ -133,6 +137,7 @@ checkNOTCookie();
   }
   /*/
   gowww.onclick = function() {
+    
     searchstartpage();
   }
   gonc.onclick = function() {
