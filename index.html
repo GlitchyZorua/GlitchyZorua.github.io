@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" type="text/css" href="css.css">
     <title>RetroJCity</title>
 </head>
+<!-- welcome to shitty code -->
+
+
 <body lang="en-US" dir="ltr">
     <img src="MOSHED-2023-2-27-18-21-5.gif" name="Image1" width="258" height="77" border="0">
     <br>
-    <p style="font-family: Nimbus Mono PS; font-size: 24pt;">Welcome.</p>
+    <p style="font-family: Nimbus Mono PS; font-size: 24pt;">Welcome.</p> <!-- CSS? CSS my ass.-->
     <section><input autofocus placeholder="Search..." type="text" id="url">
 <br><br><br>
 <button id="gowww">Search WWW</button><button id="gonc">Search Neocities</button><button id="luck">I'm Feeling Lucky</button></section>
+<p> Key shortcuts: </p>
+<p> [ENTER] - Search with Startpage!</p>
+<p> [ENTER] + [SHIFT] - Search with Neocities!</p>
+
 <p id="outputagent"></p>
 <p id="outputbatt"></p>
 <a href="https://www.mabsland.com/Adoption.html"><img src="files/Censor_PGb.gif"></a>
+ <!-- To do: add backwards compatibility for older web browsers -->
+ <br>
+ <br>
 <script>
-for (let i = 0; i < 5; i++) {
-console.log(
-"%c WHAT ARE U DOING HERE??!?!? ("+i+")", "color: red; font-size: 50px"
-)
-} 
-
     // please note, 
 // that IE11 now returns undefined again for window.chrome
 // and new Opera 30 outputs true for window.chrome
@@ -38,7 +41,7 @@ var isIEedge = winNav.userAgent.indexOf("Edg") > -1;
 var isIOSChrome = winNav.userAgent.match("CriOS");
 
 if (isIOSChrome) {
-    // fuck off
+ // get out of my website
      window.location.replace("/pages/chrome.html");
 } else if(
   isChromium !== null &&
@@ -47,14 +50,14 @@ if (isIOSChrome) {
   isOpera === false &&
   isIEedge === false
 ) {
-  window.location.replace("/pages/chrome.html"); // fuck off
+  window.location.replace("/pages/chrome.html"); // get out of my website
 } else { 
    // not Google Chrome 
 }
 function isChromiumGoFuckYourselfMicrosoftEdge() {
     for (brand_version_pair of navigator.userAgentData.brands) {
         if (brand_version_pair.brand == "Chromium"){
-            // fuck off
+           // get out of my website
             window.location.replace("/pages/chrome.html");
         }
     }
@@ -74,15 +77,35 @@ isChromiumGoFuckYourselfMicrosoftEdge();
 <br>
 <i> Time uses PST </i>
 <div id="app"></div>
-<script src="https://unpkg.com/webamp"></script>
-
+<script src="https://unpkg.com/webamp">
+</script>
 <!-- <script>
     const app = document.getElementById("app")
     const webamp = new Webamp();
     webamp.renderWhenReady(app);
 </script> -->
 <script>
-  //var 
+/*/
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
+  }
+} 
+/*/ 
+/*./
+function checkNOTCookie(){
+    if(!remembermeDAMMIT === true){
+      window.location.replace("https://retrojcities.neocities.org/frontsite.html");
+    }
+}
+checkNOTCookie();
+/*/
   var url = document.getElementById('url'),
   gowww = document.getElementById('gowww');
   gonc = document.getElementById('gonc');
@@ -110,16 +133,34 @@ isChromiumGoFuckYourselfMicrosoftEdge();
   }
   /*/
   gowww.onclick = function() {
-    searchstartpage()
+    searchstartpage();
   }
   gonc.onclick = function() {
-    searchneocities()
+    searchneocities();
   }
   luck.onclick = function() {
-    var win = window.open('https://GlitchyZorua.github.io/projects/random/neocities/random.html', '_blank');
+    var win = window.open('https://glitchyzorua.github.io/projects/random/neocities/random.html', '_blank');
     win.focus();
   }
 
+  url.addEventListener('keydown', (event) => {
+  /*/   
+  if (event.shiftKey) {
+    keys.Shift = true;
+  }
+  if (event.key === "Enter") {
+    keys.Enter = true;
+  }
+/*/
+      if (event.shiftKey && event.key === "Enter"){
+       searchneocities();
+       return;
+      }
+      if (!event.shiftKey && event.key === 'Enter') {
+        searchstartpage(); 
+        return;
+      }
+    });
   let agent = navigator.userAgent;
   document.getElementById("outputagent").innerHTML = "Your user agent is " + agent;
   /*/
@@ -136,8 +177,11 @@ isChromiumGoFuckYourselfMicrosoftEdge();
   });
 });
   }
+  
+  //FUCKING FIREFOX DOESN'T SUPPORT BATTERY PERCENTAGES. CHROME DOES. FUCK THIS SHIT!
 /*/
 </script>
+
 
     <p> powered by startpage. </p>
 
