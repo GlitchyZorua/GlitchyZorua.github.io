@@ -15,16 +15,20 @@
     <section><input autofocus placeholder="Search..." type="text" id="url">
 <br><br><br>
 <button id="gowww">Search WWW</button><button id="gonc">Search Neocities</button><button id="luck">I'm Feeling Lucky</button></section>
+    <p> powered by startpage. </p>
 <p> Key shortcuts: </p>
 <p> [ENTER] - Search with Startpage!</p>
 <p> [ENTER] + [SHIFT] - Search with Neocities!</p>
-
+<a href="javascript:location.reload(true)"><p>Purge cache</p></a>
 <p id="outputagent"></p>
 <p id="outputbatt"></p>
-<a href="https://www.mabsland.com/Adoption.html"><img src="files/Censor_PGb.gif"></a>
+<a href="https://www.mabsland.com/Adoption.html"><img src="files/Censor_PGb.gif"></a><br><br>
+<a href="https://neocities.org/site_files/download">want to download your entire site? click here.</a>
+
  <!-- To do: add backwards compatibility for older web browsers -->
  <br>
  <br>
+ <a href='http://internetometer.com/give/50041'><img src='http://internetometer.com/image/50041.png'/></a>
 <script>
     // please note, 
 // that IE11 now returns undefined again for window.chrome
@@ -70,10 +74,10 @@ isChromiumGoFuckYourselfMicrosoftEdge();
 // ITS TWO DIFFERENT FUCKING CHECKS OFC THIS IS GOING TO WORK AAAAAAAA
 </script>
 <br>
+<br>
 <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:180px;height:60px;"src="https://www.clocklink.com/html5embed.php?clock=004&timezone=PST&color=white&size=180&Title=&Message=&Target=&From=2023,1,1,0,0,0&Color=white"></iframe>
 <br>
 <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:240px;height:25px;"src="https://www.clocklink.com/html5embed.php?clock=018&timezone=PST&color=green&size=240&Title=&Message=&Target=&From=2023,1,1,0,0,0&DateFormat=yyyy / mm / dd DDD&TimeFormat=hh:mm:ss TT&Color=green"></iframe>
-
 <br>
 <i> Time uses PST </i>
 <div id="app"></div>
@@ -85,42 +89,33 @@ isChromiumGoFuckYourselfMicrosoftEdge();
     webamp.renderWhenReady(app);
 </script> -->
 <script>
-/*/
-function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
+  function checkCookie(){
+    var cookieEnabled = navigator.cookieEnabled;
+    if (!cookieEnabled){ 
+        cookieEnabled = document.cookie.indexOf("plsdonteatme")!=-1;
     }
-  }
-} 
-/*/ 
-/*./
-function checkNOTCookie(){
-    if(!remembermeDAMMIT === true){
-      window.location.replace("https://retrojcities.neocities.org/frontsite.html");
-    }
+    return cookieEnabled || showCookieFail();
 }
-checkNOTCookie();
-/*/
+
+function showCookieFail(){
+  window.location.replace("https://retrojcities.neocities.org/frontsite.html");
+}
+
+
+// within a window load,dom ready or something like that place your:
+checkCookie();
+
   var url = document.getElementById('url'),
   gowww = document.getElementById('gowww');
   gonc = document.getElementById('gonc');
   luck = document.getElementById('luck');
   function searchstartpage() {
-  if (url.value == "") {
-    alert('You must type something in the search bar dummy');
-  }
+  if (url.value) {
     window.location.replace("https://www.startpage.com/sp/search?query=" + encodeURI(url.value));
   }
   }
   function searchneocities() {
-  if (url.value == "") {
-    alert('You must type something in the search bar dummy');
-  }
+  if (url.value) {
    window.location.replace("https://neocities.org/browse?sort_by=followers&tag=" + encodeURI(url.value));
   }
   }
@@ -184,10 +179,8 @@ checkNOTCookie();
   
   //FUCKING FIREFOX DOESN'T SUPPORT BATTERY PERCENTAGES. CHROME DOES. FUCK THIS SHIT!
 /*/
+
 </script>
-
-
-    <p> powered by startpage. </p>
 
     <br><br>
     
@@ -195,7 +188,7 @@ checkNOTCookie();
     <p>Hi welcome to my search engine/personal website.</p>
     
     <p>You may remember me from Scratch.</p>
-  
+    
     <p>My name is GlitchyZorua, or GZ for short</p>
     
     <p> I'm a human on the internet doing... stuff</p>  
@@ -207,26 +200,27 @@ checkNOTCookie();
     <br>
     <b> SOCIAL MEDIA: </b>
     <p>Email: <a href="mailto:RetroJBOT@hotmail.com">RetroJBOT@hotmail.com</a></p>
+    <br>
+
     <p>(Send me literally anything!)</p>
 
     <p>Mastodon: <a href="https://mas.to/@GlitchyZorua">@GlitchyZorua@mas.to</a></p>
     <p>
     <a href="http://users3.smartgb.com/g/g.php?a=s&amp;i=g36-34400-4f" style="color:#ffbf00">Sign the guestbook!</a>
     <br>
-    <a href="https://GlitchyZorua.github.io/discord.html" style="color: #81d41a">Discord</a> 
+    <a href="https://glitchyzorua.github.io/discord.html" style="color: #81d41a">Discord</a> 
      <a href="https://matrix.to/#/%23RetroJSpace:matrix.org" style="color: #ff0000">Matrix</a>
      <a href="https://www.tumblr.com/glitchyzorua" style="color: #800080"> Tumblr </a>
      <a href="https://spacehey.com/profile?id=138354" style="color: #FFC0CB"> SpaceHey </a>
-     <a href="https://github.com/GlitchyZorua" style="color: #FF8000"> GitHub </a>
+     <a href="https://github.com/glitchyzorua" style="color: #FF8000"> GitHub </a>
     </p>
-    <a href="https://retrojcities.neocities.org/games.html" style="color:#FF0000">Games</a>
-    <a href="./archive.html">The Archives</a>
-    <!-- <p style="font-family: Nimbus Mono PS; font-size: 24pt;">Chat</p> -->
-        <!-- <iframe src="https://www3.cbox.ws/box/?boxid=3527469&boxtag=BW4NtJ" width="300" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	-->
+    <a href="https://retrojcities.neocities.org/games.html" style="color:#FF0000">Games (not much)</a>
+    <a href="./archive.html" style="color:#FFFF00">The Archives</a> <a href="https://retrojcities.neocities.org/links" style="color:#4169E1">Links</a>
+    <!-- <p style="font-family: Nimbus Mono PS; font-size: 24pt;">Chat</p> 
+        <iframe src="https://www3.cbox.ws/box/?boxid=3527469&boxtag=BW4NtJ" width="300" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	-->
     <br>
-    <p>Be nice to everyone!</p>
-    <p>Page Views</p><script type="text/javascript" src="//counter.websiteout.net/js/6/0/0/0"></script><br>
-    <a href="https://flagcounter.me/details/dJu"><img src="https://flagcounter.me/dJu/" alt="Flag Counter"></a>
+    <!-- <p>Be nice to everyone!</p> -->
+    <!-- cbox bans are payed. so this is useless now. cbox if you are seeing this right now: go fuck yourselves. and your stupid anti-feature that only lets me ban 5 jackasses unless i pay my god damn organs. you all suck.-->
     <br>
     <p style="font-family: Nimbus Mono PS; font-size: 24pt;">Whats New?</p>
     <embed src="./pages/news.html" width="640" height="480"></embed>
@@ -234,32 +228,32 @@ checkNOTCookie();
     <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=Mystic&dob=1678840049&gender=m&element=Water&pet=https%3A%2F%2Fimg.pokemondb.net%2Fsprites%2Fblack-white%2Fanim%2Fnormal%2Fzorua.gif&map=tree.jpg&background=gify.jpg&tablecolor=black&textcolor=black" frameborder="0"></iframe><br>
     <p style="font-family: Nimbus Mono PS; font-size: 24pt;"></p>
     <br>
-    <script type="text/javascript" id="WolframAlphaScriptf30d17a6f71db1e6f7a00ad5e6b6ce8b" src="//www.wolframalpha.com/widget/widget.jsp?id=f30d17a6f71db1e6f7a00ad5e6b6ce8b"></script>
+    <script type="text/javascript" id="WolframAlphaScript2daecf5d551e10b4c0cb166f43c1da5a" src="//www.wolframalpha.com/widget/widget.jsp?id=2daecf5d551e10b4c0cb166f43c1da5a"></script>
     <h1> Mess around with my website!</h1>
     <a href="javascript:var%20KICKASSVERSION='2.0';var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);">Kick Ass</a>
     <br>
     <a href="javascript:(function () {var s = document.createElement('script');s.setAttribute('src', 'http://fontbomb.ilex.ca/js/main.js');document.body.appendChild(s);}());">FontBomb</a>
-    <br><br>
-  <h2> Edit shit out! </h2>
+    <h2> Edit shit out! </h2>
     <i> changes won't be saved once you refresh the page.</i>
     <br>
-    <a href="https://tamanotchi.world/6314c"><img src="https://tamanotchi.world/i/6314" alt="It's tamaNOTchi! Click to feed!"></a>
     <br>
     <a href="javascript:if(document.body.contentEditable != 'true')void(document.body.contentEditable = 'true');else void(document.body.contentEditable = 'false');">Toggle edit mode</a>
-    <br>
+    <br><br>
+    <a href="https://tamanotchi.world/6314c"><img src="https://tamanotchi.world/i/6314" alt="It's tamaNOTchi! Click to feed!"></a> 
+    <p> FEED MY TAMANOTCHI! HIS NAME IS COOKIE!!! </p><br>
+    <p>That's it for now! See you next time, Or not. Who knows!</p>
     <iframe width="300" height="250" style="border:none" src="https://googol.neocities.org/neolink/embed.html" name="neolink"></iframe>
     <br><br><br>
     <embed src="/pages/moon.html" width="222" height="161"> 
     <br>
     <br>
+    
+    <img src="https://retrojcities.neocities.org/files/spinning-internetarchive.gif"><br>
+    <p> Internet archive FTW</p>
     <!-- Footer -->
     <a href="http://www.neocities.org/"><img src="neocities.png"></a>
     <br><br><br>
- <img src="https://retrojcities.neocities.org/files/spinning-internetarchive.gif"><br>
-    <p> Internet archive FTW</p>
-    <!-- Footer -->
-    <!-- <a href="http://www.neocities.org/"><img src="neocities.png"></a> -->
-        <a href="https://sugarforbrains.neocities.org/"><img src="sugarbutton1.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://sugarforbrains.neocities.org/"><img src="button.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://sugarforbrains.neocities.org/"><img src="sugarOG.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://y2k.gov"><img src="/files/y2k.gif"></a><a href="https://www.amazon.com"><img src="./files/amazon.gif"></a><a href="https://www.mozilla.org/en-US/firefox/new/"><img src="./files/firefoxnow.gif"></a><a href="https://joinmastodon.org/"><img src="./files/masto.gif"></a><img href="/files/bank88.gif"><a href="https://googol.neocities.org/"><img src="https://googol.neocities.org/googol_thumb.gif"></a><a href="https://districts.neocities.org/"><img src="https://districts.neocities.org/buttons/districtspippin.png"></a><a href="https://www.netflix.com"><img src="./files/netflix-88x31.gif"></a><img src="./files/blank88.gif"><img src="./files/anybrowser.gif"><a href="https://www.nationalgeographic.com/"><a href ="https://www.nationalgeographic.com/"><img src='./files/NGS_88x31_logo.gif'></a><a href="https://www.theoldnet.com/"><img src=/files/theoldnetanimblur2.gif></a><img src="https://retrojcities.neocities.org/files/Anaolsux.gif"><img href="https://retrojcities.neocities.org/files/netflix-88x31.gif"><img href="https://retrojcities.neocities.org/files/cheezit.gif"><a href="https://scratch.mit.edu/downloads/"><img src="https://retrojcities.neocities.org/files/download_scratch.gif"></a><img src="./files/gcbutton_childlibrary.gif"><a href="https://sterophonick.github.io/index.html"><img src="./files/web_button.gif"></a><a href="https://gifypet.neocities.org/"><img src="./files/badge.gif"></a><a href="http://toastytech.com/evil/buttons.html"><img src="./files/stopieani.gif"><img src="./files/fartpage.gif"><img src="./files/exploit.gif"><img src="./files/nuts.gif"><img src="./files/iebad.gif"><img src="./files/iecrash.gif"><img src="./files/mandatory.gif"><img src="./files/idiotexpl.gif"><img src="./files/getmozilla.gif"><img src="./files/getmozilla2.gif"><img src="./files/getbsod.gif"><img src="./files/iemickey.gif"><img src="./files/ieborg.gif"><img src="./files/fuckie.gif"><img src="./files/ie1984.gif"><img src="./files/ieide.gif"><img src="./files/iebarf.gif"><img src="./files/duh.gif"><img src="./files/burniebtn.gif"><img src="./files/washie.gif"><img src="./files/ieevil.gif"><img src="./files/stopieani.gif"><img src="./files/ieexplode.gif"><img src="./files/msiemoz.gif"></a><img src="./files/tj88x31.gif"><img src="./files/sears.png"><img src="./files/nbc.gif"><img src=./files/toys.gif><a href="https://wac.neocities.org/"><img src="https://i.imgur.com/XTmRsxw.jpg"></a><a href="https://datgameryolo.neocities.org" title="DatGamerYolo's Website">
+    <a href="https://sugarforbrains.neocities.org/"><img src="sugarbutton1.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://sugarforbrains.neocities.org/"><img src="button.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://sugarforbrains.neocities.org/"><img src="sugarOG.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://y2k.gov"><img src="/files/y2k.gif"></a><a href="https://www.amazon.com"><img src="./files/amazon.gif"></a><a href="https://www.mozilla.org/en-US/firefox/new/"><img src="./files/firefoxnow.gif"></a><a href="https://joinmastodon.org/"><img src="./files/masto.gif"></a><img href="/files/bank88.gif"><a href="https://googol.neocities.org/"><img src="https://googol.neocities.org/googol_thumb.gif"></a><a href="https://districts.neocities.org/"><img src="https://districts.neocities.org/buttons/districtspippin.png"></a><a href="https://www.netflix.com"><img src="./files/netflix-88x31.gif"></a><img src="./files/blank88.gif"><img src="./files/anybrowser.gif"><a href="https://www.nationalgeographic.com/"><a href ="https://www.nationalgeographic.com/"><img src='./files/NGS_88x31_logo.gif'></a><a href="https://www.theoldnet.com/"><img src=/files/theoldnetanimblur2.gif></a><img src="https://retrojcities.neocities.org/files/Anaolsux.gif"><img href="https://retrojcities.neocities.org/files/netflix-88x31.gif"><img href="https://retrojcities.neocities.org/files/cheezit.gif"><a href="https://scratch.mit.edu/downloads/"><img src="https://retrojcities.neocities.org/files/download_scratch.gif"></a><img src="./files/gcbutton_childlibrary.gif"><a href="https://sterophonick.github.io/index.html"><img src="./files/web_button.gif"></a><a href="https://gifypet.neocities.org/"><img src="./files/badge.gif"></a><a href="http://toastytech.com/evil/buttons.html"><img src="./files/stopieani.gif"><img src="./files/fartpage.gif"><img src="./files/exploit.gif"><img src="./files/nuts.gif"><img src="./files/iebad.gif"><img src="./files/iecrash.gif"><img src="./files/mandatory.gif"><img src="./files/idiotexpl.gif"><img src="./files/getmozilla.gif"><img src="./files/getmozilla2.gif"><img src="./files/getbsod.gif"><img src="./files/iemickey.gif"><img src="./files/ieborg.gif"><img src="./files/fuckie.gif"><img src="./files/ie1984.gif"><img src="./files/ieide.gif"><img src="./files/iebarf.gif"><img src="./files/duh.gif"><img src="./files/burniebtn.gif"><img src="./files/washie.gif"><img src="./files/ieevil.gif"><img src="./files/ieexplode.gif"><img src="./files/msiemoz.gif"></a><img src="./files/tj88x31.gif"><img src="./files/sears.png"><img src="./files/nbc.gif"><img src=./files/toys.gif><a href="https://wac.neocities.org/"><img src="https://i.imgur.com/XTmRsxw.jpg"></a><a href="https://datgameryolo.neocities.org" title="DatGamerYolo's Website">
         <img src="https://datgameryolo.neocities.org/badbutton.png" alt="DatGamerYolo's Website">
         </a>
     <footer>
