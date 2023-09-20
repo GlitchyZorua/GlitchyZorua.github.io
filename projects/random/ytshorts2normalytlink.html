@@ -7,13 +7,15 @@
 </head>
 <body>
     <h1>YouTube Shorts Link Converter</h1>
-    <p>Javascript is highly recommneded</p><br>
+    <p>Javascript is highly recommended</p><br>
     <p>Enter a YouTube Shorts link below:</p>
     <input type="text" id="shortsLink" placeholder="Enter YouTube Shorts Link">
     <button onclick="convertLink()">Convert</button>
 
     <p>Converted Link:</p>
     <p id="convertedLink"></p>
+
+    <button onclick="copyLink()">Copy</button>
 
     <script>
         function convertLink() {
@@ -32,6 +34,16 @@
             const regex = /(?:youtu.be\/|youtube.com\/(?:v\/|embed\/|watch\?v=|shorts\/))([\w\-]+)(?:\S+)?/;
             const match = url.match(regex);
             return match ? match[1] : null;
+        }
+
+        function copyLink() {
+            const convertedLink = document.getElementById("convertedLink");
+            const textArea = document.createElement("textarea");
+            textArea.value = convertedLink.textContent;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
         }
     </script>
 </body>
