@@ -12,6 +12,19 @@
   <body>
   <img src="https://retrojcities.neocities.org/MOSHED-2023-2-27-18-21-5.gif" name="Image1" width="258" height="77" border="0">
   <br>
+  <script>
+    setInterval(function () {
+    // check if the user is using firefox
+  const isFirefox = navigator.userAgent.toLowerCase().includes('firefox');
+
+    if (isFirefox) {
+      // redirect them to firefox.html and display a cheeky message. (https://www.youtube.com/watch?v=lDgD-_6eZEM)
+      window.location.replace("firefox.html");
+      } else {
+      // do nothing but keep looping!!!
+      }
+    }, 9000);
+  </script>
   <style>
   .blink_me {
   animation: blinker 1s linear infinite;
