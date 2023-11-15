@@ -27,9 +27,31 @@ if (isIOSChrome) {
 } else { 
    // not Google Chrome 
 }
+
+// Dexrn: add disallowed ones here.
+
+var disallowedagents = [
+  'Edg',
+  'Chrome',
+  'EdgA',
+  'OPR'
+];
+
+// Dexrn: IDK if you will use this but you can also whitelist certain words in useragents and if the useragent string contains one in this exceptions list then the user will not be redirected
+
+var allowedagents = [
+]
+
+var isDisallowed = disallowedagents.some(agent => window.navigator.userAgent.includes(agent));
+var isAllowed = allowedagents.some(agent => window.navigator.userAgent.includes(agent));
+
+if (isDisallowed && !isAllowed) {
+  window.location.replace("pages/chrome.html");
+}
+
 // I'm leaving this (the above code for backwards compatiblity with older chromium based shit browsers that don't support navigator.userAgentData.brands
 function isChromiumGoFuckYourselfMicrosoftEdge() {
-    for (brand_version_pair of navigator.userAgentData.brands) {
+    for (brand_version_pair of window.navigator.userAgentData.brands) {
         if (brand_version_pair.brand == "Chromium"){
            // get out of my website
             window.location.replace("/pages/chrome.html");
