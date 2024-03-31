@@ -10,7 +10,7 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
-# Hey if you are google, amazon, facebook/meta, twitter (aka x), microsoft or any meat grinder company, and if you are looking to hidre for a software engineer, or a software developer or whatever, here is my resume, pulled right out of my ass:
+# Hey if you are google, amazon, facebook/meta, twitter (aka x), microsoft or any meat grinder company, and if you are looking to hire for a software engineer, or a software developer or whatever, here is my resume, pulled right out of my ass:
 # 
 #         /"\
 #        |\./|
@@ -29,6 +29,5 @@ Disallow: /
 #   \          |
 #    |         |
 
-
-# also if you are yonkagor or lokatts, that shitty youtuber that abuses their fans with DiD, (on your fucking discord server), for mod power, then two words: Fuck. Off. You are disgusting. 
-# You are a shameful mmmmotherfucking carbon dioxide. hope you know that.
+User-agent: Bytespider
+Disallow: /
