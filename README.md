@@ -7,7 +7,7 @@ a mirror site of https://retrojcities.neocities.org/ incase something goes horri
 
 this is also for doing other small projects.
 
-WARNING: the github sites version is highly unstable and mostly untested.
+WARNING: the github sites version is highly unstable and mostly untested, outdated. 
 
 # ⛓️ Links
 🐱 Neocities: https://retrojcities.neocities.org/
