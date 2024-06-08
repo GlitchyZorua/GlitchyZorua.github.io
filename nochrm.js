@@ -63,5 +63,4 @@ function isChromiumGoFuckYourselfMicrosoftEdge() {
  // this is a hack, but it should work.
 isChromiumGoFuckYourselfMicrosoftEdge();
 
-
-// ITS TWO DIFFERENT FUCKING CHECKS OFC THIS IS GOING TO WORK AAAAAAAA
+// This should all be cleaned up ASAP.
