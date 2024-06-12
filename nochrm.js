@@ -6,6 +6,7 @@
 // and new IE Edge outputs to true now for window.chrome
 // and if not iOS Chrome check
 // so use the below updated condition
+/*/
 var isChromium = window.chrome;
 var winNav = window.navigator;
 var vendorName = winNav.vendor;
@@ -27,7 +28,7 @@ if (isIOSChrome) {
 } else { 
    // not Google Chrome 
 }
-
+/*/
 // Dexrn: add disallowed ones here.
 
 var disallowedagents = [
