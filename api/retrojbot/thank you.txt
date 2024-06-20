@@ -3,11 +3,11 @@ Thank you for inviting RetroJBOT.
 The prefix is j.
 
 Support server: https://discord.gg/Ms4NFJb
-List of commands: https://gist.github.com/Jacobw0/e2c1ce52e0c1edeab2405e8d3e7259b0
-Username: Jacobw#8117
+List of commands: https://gist.github.com/GlitchyZorua/e2c1ce52e0c1edeab2405e8d3e7259b0
+Discord Username: GlitchyZorua
 
-Twitter: @GlitchyZorua
-Mastodon: @jacobw@mastodon.social 
+Social:
+Mastodon: glitchyzorua@wetdry.world
 
 If you have any questions, please drop a dm.
 
@@ -17,4 +17,4 @@ I know this landing page isn't much, but hey, it works.
 You may safely close this window. As there is nothing else to do.
 
 
-- Jacobw
+- GlitchyZorua
