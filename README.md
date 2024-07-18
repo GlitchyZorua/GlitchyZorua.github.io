@@ -1,15 +1,5 @@
-# GlitchyZorua.github.io
+# New-RetroJCity-Site
 
+The new Website for retrojcity is coming very soon.
 
-I know you are there, litevx :)
-
-a mirror site of https://retrojcities.neocities.org/ incase something goes horribly wrong
-
-this is also for doing other small projects.
-
-WARNING: the github sites version is highly unstable and mostly untested, outdated. 
-
-# ⛓️ Links
-🐱 Neocities: https://retrojcities.neocities.org/
-
-🦑 Github Sites: https://glitchyzorua.github.io/
+I decided to make the layout google-like. since i'm a big fan of the old interface of google. but not the new one.

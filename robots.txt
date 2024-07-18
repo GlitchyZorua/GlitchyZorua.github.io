@@ -31,3 +31,5 @@ Disallow: /
 
 User-agent: Bytespider
 Disallow: /
+
+# This probably won't work, but i'm still gonna add this here anyways.
