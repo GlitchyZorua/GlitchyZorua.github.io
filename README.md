@@ -1,4 +1,4 @@
-# As of right now, the GitHub version of this site is broken. I will be fixing this site soon.
+
 
 # GlitchyZorua.github.io
 
