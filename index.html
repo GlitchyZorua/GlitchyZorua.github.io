@@ -2,22 +2,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta charset="utf-8" />
 <title>RetroJCity</title>
+<body>
 <script src="oneko.js"></script>
 <script src="nochrm.js"></script>
+<link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
+<script src="https://melonking.net/scripts/flood.js"></script>
+
+<script src="https://cursor-party.glitchyzorua.partykit.dev/cursors.js"></script>
+
 
 <!-- SCM Music Player https://www.scmplayer.net -->
 <!--
 <!--<script type="text/javascript" src="https://www.scmplayer.net/script.js" -->
 <!-- data-config="{'skin':'skins/cyber/skin.css','volume':43,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':[{'title':'Pix n%27 Love - Purple Groove','url':'https://github.com/GlitchyZorua/GlitchyZorua.github.io/raw/main/files/youtube_tBglvCnUOE8_audio.mp3'},{'title':'glaci%E6re - Two Months of Moments - 07 Confidence, Baby','url':'https://github.com/GlitchyZorua/GlitchyZorua.github.io/raw/main/files/sfx/glaciære -%20Two%20Months%20of%20Moments%20-%2007%20Confidence,%20Baby.mp3'},{'title':'glaci%E6re - Two Months of Moments - 04 Stars Forced To Shine','url':'https://github.com/GlitchyZorua/GlitchyZorua.github.io/raw/main/files/sfx/glaci%C3%A6re%20-%20Two%20Months%20of%20Moments%20-%2004%20Stars%20Forced%20To%20Shine.mp3'}]}" ></script>-->
 <!-- SCM Music Player script end -->
-
 <script>
-alert("The github version of this site is broken, due to GitHub screwing up. I'll try my best to fix this site the best i can.")
 console.log("┬ ┬┌─┐┬  ┬  ┌─┐┬\n├─┤├┤ │  │  │ ││\n┴ ┴└─┘┴─┘┴─┘└─┘o");
 </script>
-<link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
-<script src="https://melonking.net/scripts/flood.js"></script>
-<script src="https://cursor-party.glitchyzorua.partykit.dev/cursors.js"></script>
 </body>
 </html>
 <div id="banner-small" style="flex-direction: column; text-align: center; display: none; color: red;"><p><b>Stop using Chromium browsers, Google is trying to kill off ad and tracker blockers! </b><a href="https://gianmarco.gg/blinky"><b>Learn more</b></a> or <a onclick="hideNavWarn()"><b>close</b></a>.</p></div>
@@ -126,31 +127,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function searchstartpage() {
       if (url.value) {
-        window.location.replace("https://www.startpage.com/sp/search?query=" + encodeURI(url.value));
+        window.location.assign("https://www.startpage.com/sp/search?query=" + encodeURI(url.value));
       }
     }
 
     function searchneocities() {
       if (url.value) {
-        window.location.replace("https://neocities.org/browse?sort_by=followers&tag=" + encodeURI(url.value));
+        window.location.assign("https://neocities.org/browse?sort_by=followers&tag=" + encodeURI(url.value));
       }
     }
 
     function searchluck() {
       if (url.value === "the cake is a lie") {
-        window.location.replace('https://www.youtube.com/watch?v=JAw3V8ScLeI');
+        ('https://www.youtube.com/watch?v=JAw3V8ScLeI');
         return;
       }
       if (url.value === "fandom") {
-        window.location.replace('https://www.youtube.com/watch?v=qcfuA_UAz3I');
+        window.location.assign('https://www.youtube.com/watch?v=qcfuA_UAz3I');
         return;
       }
       if (url.value === "orgin") {
-        window.location.replace('https://windows93.net');
+        window.location.assign('https://windows93.net');
         return;
       }
       if (url.value === "list") {
-        window.location.replace('https://github.com/GlitchyZorua/GlitchyZorua.github.io/blob/main/projects/random/neocities/random.html');
+        window.location.assign('https://github.com/GlitchyZorua/GlitchyZorua.github.io/blob/main/projects/random/neocities/random.html');
         return;
       }
       if (url.value === "ding"){
@@ -158,11 +159,11 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
       }
       if (url.value == "computer"){
-        window.location.replace('https://www.youtube.com/watch?v=aAtF-Zzdnc8')
+        window.location.assign('https://www.youtube.com/watch?v=aAtF-Zzdnc8')
         return;
       }
       if (url.value == "surprise"){
-        window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+        window.location.assign('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
         return;
       }
       if (url.value == "sdjlkfgjfsdlkgfdjglfkdjgfdlkg") {
@@ -183,10 +184,10 @@ document.addEventListener("DOMContentLoaded", function() {
         return
       }
       if (url.value == "best cooking site"){
-      window.location.replace("https://based.cooking/");
+      window.location.assign("https://based.cooking/");
       return
       }
-        window.location.replace("https://GlitchyZorua.github.io/projects/random/neocities/random.html");
+        window.location.assign("https://GlitchyZorua.github.io/projects/random/neocities/random.html");
     }
     gowww.addEventListener("click", searchstartpage);
     gonc.addEventListener("click", searchneocities);
@@ -201,11 +202,15 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 /*/
       if (event.shiftKey && event.key === "Enter"){
-       searchneocities();
+          url.addEventListener('focus', function() {
+            searchneocities();
+          });
        return;
       }
       if (!event.shiftKey && event.key === 'Enter') {
+        url.addEventListener('focus', function() {
         searchstartpage();
+        });
         return;
       }
     });
@@ -243,36 +248,26 @@ document.addEventListener("DOMContentLoaded", function() {
         -->
         
         <script>
-if (window.location.host === "GlitchyZorua.github.io") { 
+
+if (window.location.host === "glitchyzorua.github.io" || window.location.host === "GlitchyZorua.github.io") { 
       document.write("<br><br><font size=\"-1\"><a href=\"https:\/\/retrojcities.neocities.org\">Neocities Site<\/a> - <a href=\"https:\/\/github.com\/GlitchyZorua\">GitHub Profile<\/a> - <a href=\"about.html\">About Me<\/a> - <a href=\"https:\/\/users3.smartgb.com\/g\/g.php?a=s&i=g36-34400-4f\">Sign My Guestbook<\/a> - <a href=\"\/pages\/news\">Site News<\/a> - <a href=\"\/pages\/articles\/articles\">Blogs<\/a> - <a href=\"\/pages\/microblogs.html\">Micro-Blog<\/a><\/font><p>\ud83c\udd2f 2023-2024 RetroJCity<\/p><br><i>This site isn't owned or endorsed by Google.<\/i><br><br>");
   } else if (window.location.host === "retrojcities.neocities.org") {
-      document.write("<br><br><font size=\"-1\"><a href=\"https:\/\/glitchyzorua.github.io\">GitHub Mirror<\/a> - <a href=\"https:\/\/neocities.org\/site\/retrojcities\">Neocities Profile<\/a> - <a href=\"about.html\">About Me<\/a> - <a href=\"https:\/\/users3.smartgb.com\/g\/g.php?a=s&i=g36-34400-4f\">Sign My Guestbook<\/a> - <a href=\"\/pages\/news\">Site News<\/a> - <a href=\"\/pages\/articles\/articles\">Blogs<\/a> - <a href=\"\/pages\/microblogs.html\">Micro-Blog<\/a> - <a href=\"dmca.html\">DMCA<\/a><\/font><p>\ud83c\udd2f 2023-2024 RetroJCity<\/p><br><i>This site isn't owned or endorsed by Google.<\/i><br><br>");
+      document.write("<br><br><font size=\"-1\"><a href=\"https:\/\/glitchyzorua.github.io\">GitHub Mirror<\/a> - <a href=\"https:\/\/neocities.org\/site\/retrojcities\">Neocities Profile<\/a> - <a href=\"about.html\">About Me<\/a> - <a href=\"https:\/\/users3.smartgb.com\/g\/g.php?a=s&i=g36-34400-4f\">Sign My Guestbook<\/a> - <a href=\"\/pages\/news\">Site News<\/a> - <a href=\"\/pages\/articles\/articles\">Blogs<\/a> - <a href=\"\/pages\/microblogs.html\">Micro-Blog<\/a> - <a href=\"dmca.html\">DMCA<\/a><\/font><br><p>\ud83c\udd2f 2023-2024 RetroJCity<\/p><br><i>This site isn't owned or endorsed by Google.<\/i><br><br>");
   } else {
     console.warn('Bottom Bar cannot detect if you are on the github mirror or not. Using dummy mode.');
-    document.write("<br><br><font size=\"-1\"><a href=\"https:\/\/glitchyzorua.github.io\">GitHub Mirror<\/a> - <a href=\"https:\/\/retrojcities.neocities.org\">Neocities Site<\/a> - <a href=\"https:\/\/neocities.org\/site\/retrojcities\">Neocities Profile<\/a> - <a href=\"about.html\">About Me<\/a> - <a href=\"https:\/\/users3.smartgb.com\/g\/g.php?a=s&i=g36-34400-4f\">Sign My Guestbook<\/a> - <a href=\"\/pages\/news\">Site News<\/a> - <a href=\"\/pages\/articles\/articles\">Blogs<\/a> - <a href=\"\/pages\/microblogs.html\">Micro-Blog<\/a> - <a href=\"dmca.html\">DMCA<\/a><\/font><p>\ud83c\udd2f 2023-2024 RetroJCity<\/p><br><i>This site isn't owned or endorsed by Google.<\/i><br><br><br>");
+    document.write("<br><br><font size=\"-1\"><a href=\"https:\/\/glitchyzorua.github.io\">GitHub Mirror<\/a> - <a href=\"https:\/\/retrojcities.neocities.org\">Neocities Site<\/a> - <a href=\"https:\/\/neocities.org\/site\/retrojcities\">Neocities Profile<\/a> - <a href=\"about.html\">About Me<\/a> - <a href=\"https:\/\/users3.smartgb.com\/g\/g.php?a=s&i=g36-34400-4f\">Sign My Guestbook<\/a> - <a href=\"\/pages\/news\">Site News<\/a> - <a href=\"\/pages\/articles\/articles\">Blogs<\/a> - <a href=\"\/pages\/microblogs.html\">Micro-Blog<\/a> - <a href=\"dmca.html\">DMCA<\/a><\/font><p>\ud83c\udd2f 2023-2024 RetroJCity<\/p><br><i>This site isn't owned or endorsed by Google.<\/i><br><br>");
   }
-
-          </script></html>
-</a><br>
-
-        <br><br><a href="http://www.nerdtests.com/ft_cg.php?im">
-<br><img src="http://www.nerdtests.com/images/ft/cg.php?val=9720" alt="My computer geek score is greater than 68% of all people in the world! How do you compare? Click here to find out!"><br>
-
           </script></body></html>
-
-    
 </a>
         
-      <br>
+        <a href="http://www.nerdtests.com/ft_cg.php?im">
+<img src="http://www.nerdtests.com/images/ft/cg.php?val=9720" alt="My computer geek score is greater than 68% of all people in the world! How do you compare? Click here to find out!"><br><br><br>
             <a href="https://www.websiteout.net/counter.php"><img src="//counter.websiteout.net/compte.php?S=retrojcities.neocities.org&amp;C=6&amp;D=0&amp;N=0&amp;M=0" alt="web hit counter" border="0"><br><br>
     <a href="https://flagcounter.me/details/dJu"><img src="https://flagcounter.me/dJu/" alt="Flag Counter"></a><br><br>
     <a href='http://internetometer.com/give/50041'><img src='http://internetometer.com/image/50041.png'/></a><br><br>
     <iframe src="//incr.easrng.net/badge?key=retrojcity" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe><br><br>
-
         <a href="https://sugarforbrains.neocities.org/"><img src="sugarbutton1.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://sugarforbrains.neocities.org/"><img src="button.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://sugarforbrains.neocities.org/"><img src="sugarOG.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://y2k.gov"><img src="/files/y2k.gif"></a><a href="https://www.amazon.com"><img src="./files/amazon.gif"></a><a href="https://www.mozilla.org/en-US/firefox/new/"><img src="./files/firefoxnow.gif"></a><a href="https://joinmastodon.org/"><img src="./files/masto.gif"></a><img href="/files/bank88.gif"><a href="https://googol.neocities.org/"><img src="https://googol.neocities.org/googol_thumb.gif"></a><!-- <a href="https://districts.neocities.org/"><img src="https://districts.neocities.org/buttons/districtspippin.png"></a>--><a href="https://www.netflix.com"><img src="./files/netflix-88x31.gif"></a><img src="./files/blank88.gif"><img src="./files/anybrowser.gif"><a href="https://www.nationalgeographic.com/"><a href ="https://www.nationalgeographic.com/"><img src='./files/NGS_88x31_logo.gif'></a><a href="https://www.theoldnet.com/"><img src=/files/theoldnetanimblur2.gif></a><img src="/files/Anaolsux.gif"><img href="/files/netflix-88x31.gif"><img href="/files/cheezit.gif"><a href="https://scratch.mit.edu/downloads/"><img src="/files/download_scratch.gif"></a><img src="./files/gcbutton_childlibrary.gif"><a href="https://sterophonick.github.io/index.html"><img src="./files/web_button.gif"></a><a href="https://gifypet.neocities.org/"><img src="./files/badge.gif"></a><a href="http://toastytech.com/evil/buttons.html"><img src="./files/stopieani.gif"><!--- <img src="./files/fartpage.gif">---> <img src="./files/exploit.gif"><img src="./files/nuts.gif"><img src="./files/iebad.gif"><img src="./files/iecrash.gif"><img src="./files/mandatory.gif"><img src="./files/idiotexpl.gif"><img src="./files/getmozilla.gif"><img src="./files/getmozilla2.gif"><img src="./files/getbsod.gif"><img src="./files/iemickey.gif"><img src="./files/ieborg.gif"><img src="./files/fuckie.gif"><img src="./files/ie1984.gif"><img src="./files/ieide.gif"><img src="./files/iebarf.gif"><img src="./files/duh.gif"><!-- <img src="./files/burniebtn.gif">--><img src="./files/washie.gif"><!-- <img src="./files/ieevil.gif">--><img src="./files/ieexplode.gif"><img src="./files/msiemoz.gif"></a><img src="./files/tj88x31.gif"><img src="./files/sears.png"><img src="./files/nbc.gif"><img src=./files/toys.gif><a href="https://wac.neocities.org/"><img src="https://i.imgur.com/XTmRsxw.jpg"></a><a href="https://datgameryolo.neocities.org" title="DatGamerYolo's Website"><a href="https://gianmarco.gg/"><img src="files/gmgpin.gif"></img></a><a href="https://dokode.moe/"><img src="https://dokode.moe/media/88x31sites/dokodemobutton3.gif"><img src="https://dokode.moe/media/88x31sites/dokodemobutton2.gif"></a><img src="https://datgameryolo.neocities.org/badbutton.png" alt="DatGamerYolo's Website"><a href="https://osu.ppy.sh/users/35270913"><img src="/files/osu.png"></a>
-        </body>
 
-        
         <!--
      FILE ARCHIVED ON 17:33:47 Jan 17, 2007 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 22:46:08 Oct 30, 2023.
