@@ -29,5 +29,9 @@ var splashes = [
   "The Talking Flower is in your walls.",
   "I don't even have anything to say here",
   "Heyo!",
+  "Full of satire.",
+  "Not by Google!",
+  "- Removed Herobrine",
+  "the drum has been awoken.",
 ]
 var splashes = splashes[Math.floor(Math.random() * splashes.length)]
