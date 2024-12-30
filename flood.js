@@ -1,4 +1,7 @@
 // Flood Web Ring and Flood Toy!
+if (getCookie('feature3') === "true") {
+        return; 
+ }
 
 // Super Object!
 let flood = {};
