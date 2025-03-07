@@ -1,7 +1,4 @@
 // Flood Web Ring and Flood Toy!
-if (getCookie('feature3') === "true") {
-        return; 
- }
 
 // Super Object!
 let flood = {};
@@ -116,7 +113,7 @@ function doBilge() {
         // Its too soon to bilge again!
         flood.audio.clunk.currentTime = 0;
         flood.audio.clunk.play();
-        flood.html.message.innerHTML = flood.msg.toosoon;
+        flood.html.message.innerHTML = flood.msg.toosoon + ` - Flood Percentage: ${flood.level}%`;
         return;
     }
     flood.lastBilge = Date.now();
