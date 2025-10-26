@@ -8,6 +8,40 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
+		<script>
+			       // Create chaotic text elements randomly
+        function createChaosText() {
+            const container = document.querySelector('.container');
+            const chaosElement = document.createElement('div');
+            chaosElement.style.position = 'fixed';
+            chaosElement.style.zIndex = '2';
+            chaosElement.style.color = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+            chaosElement.style.fontSize = `${Math.floor(Math.random() * 40) + 20}px`;
+            chaosElement.style.top = `${Math.floor(Math.random() * 100)}%`;
+            chaosElement.style.left = `${Math.floor(Math.random() * 100)}%`;
+            chaosElement.style.transform = `rotate(${Math.floor(Math.random() * 360)}deg)`;
+            chaosElement.style.pointerEvents = 'none';
+            chaosElement.style.textShadow = '0 0 10px currentColor';
+            chaosElement.style.fontFamily = 'monospace';
+            
+            const chaosTexts = [
+                'Grrrr... I hate it how Mastodon users are right! Grrrr... thats annoying!', 
+                'BLUESKY OH HOW MUCH I LOVE BLUESKY!', 
+                'bluesky is better because it isn\'t decentralized...', 
+                'follow me on bluesky uwu', 
+                '\"WAFFLES!\"', 
+                'BLUESKY! BLUESKY! BLUESKY!', 
+                'BLUESKY IS THE FUTURE!!', 
+                'bluesky nostalgia... super retro...'
+            ]; // fuckass bluesky user quotes
+            chaosElement.textContent = chaosTexts[Math.floor(Math.random() * chaosTexts.length)];
+            
+            document.body.appendChild(chaosElement);
+            
+            setTimeout(() => {
+                chaosElement.remove();
+            }, 3000);
+			</script>
 		<section id="main"></section>
 
 		<h1>REST IN PISS</h1>
@@ -19,8 +53,7 @@
 		</p>
 
 		<p id="left">Play audio</p><br>
-		<p id="left">Over 39M bluesky users being fucked! (as of writing)</p>
-        
+		
 		<p id="right">
 		    <a href="https://www.reddit.com/user/admandev/" target="_blank">Killed by GlitchyZorua, orginal site by /u/admandev</a>
 		     - 
