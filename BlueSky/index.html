@@ -42,7 +42,16 @@
                 chaosElement.remove();
             }, 3000);
 		   }
-			
+	    setInterval(createChaosText, 2000);
+        
+        // Make the video element increasingly chaotic over time
+        let chaosIntensity = 1;
+        setInterval(function() {
+            const videoWrapper = document.getElementById('video-wrapper');
+            chaosIntensity = Math.min(chaosIntensity + 0.1, 5);
+            videoWrapper.style.transform = `scale(${1 + Math.sin(Date.now()/1000) * 0.05 * chaosIntensity}) 
+                                    rotate(${Math.sin(Date.now()/2000) * 5 * chaosIntensity}deg)`;
+        }, 100);
 			</script>
 		<section id="main"></section>
 
