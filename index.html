@@ -1,444 +1,641 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-
-
-<body>
-<script src="https://cursor-party.glitchyzorua.partykit.dev/cursors.js"></script>
-</body>
-
-
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>About Me</title>
-<link rel="stylesheet" type="text/css" href="gcs.css">
+<!DOCTYPE html>
+<!--- WELCOME TO SHITTY CODE --->
 <link rel="stylesheet" type="text/css" href="css.css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta charset="utf-8" />
-<style type="text/css">
-h1  {
-  color:#636363;
-  float:left;
-  font-size:1.8em;
-  padding:0;
+<title>RetroJCity</title>
+<script>
+if (navigator.userAgent.includes("WebTV")){
+alert('Heya! Sorry, but WebTV boxes are not supported, Unfortunately. For the safety of your poor webtv box trying to run all of the javascript in this page, Page loading halted. Press OK to redirect you to something else!');
+window.location.replace('https://theoldnet.com/')
 }
-
-h1 img  {
-  vertical-align:middle;
-}
-
-.header form  {
-  float:right;
-  margin:1.6em 0 0;
-}
-
-.content h2  {
-  color:#FFF;
-  font-weight:bold;
-  margin:0.2em 0;
-  padding:0.2em 0.3em;
-}
-
-.content p  {
-  margin:0.5em 0;
-  padding:0.2em 0.3em;
-}
-
-.content p a {
-  font-size:1.2em;
-}
-
-.contentr1c1 h2 {
-  background:#369;
-}
-
-.contentr1c2 h2 {
-  background:#DDAD08;
-}
-
-.contentr2c1 h2 {
-  background:#396;
-  margin:0.7em 0 0;
-}
-
-.contentr2c2 h2 {
-  background:#AA1002;
-  margin:0.7em 0 0;
-}
-
-.promo  {
-  border:1px solid #000;
-  margin:0.2em 0.7em 1em 0;
-  padding:0.5em 0.3em;
-  text-align:center;
-}
-
-.promo img {
-  margin:0.3em 0.2em;
-}
-
-.promo-blue {
-  border-color:#369;
-}
-
-.promo-yellow {
-  border-color:#DDAD08;
-}
-
-.promo-green {
-  border-color:#396;
-}
-
-.promo-red {
-  border-color:#AA1002;
-}
-.contentr1 .g-unit, .contentr2 .g-unit {
-  width:49.5% !important;
-}
-
-.leftnav {
-  width:201px !important;
-}
-
-.content {
-  margin:0 0 0 201px !important;
-}</style>
-
-</head>
-
- 
-<div class="g-doc about">
-<div class="g-section header">
-<h1>About <a href="index.html"><img src="logo.gif" alt="RetroJCity" title="RetroJCity" width="266" height="70"></a>
-</h1>
-
-<form action="https://www.startpage.com/sp/search?query=" method="get">
-<label for="output"><input type="hidden" value="googleabout" name="output"></label><label for="sitesearch"><input type="hidden" value="https://www.startpage.com/sp/search?query=" name="sitesearch"></label><label for="hl"><input type="hidden" value="en" name="hl"></label><label for="q"><input type="text" value="" size="20" name="q"></label>
-    &nbsp;<input type="submit" value="Search With StartPage" name="submit">
-</form>
-</div>
-<div class="g-section g-tpl-180">
-<div class="g-unit g-first leftnav">
-
-
-<div class="promo promo-red">
-<strong>Did you know?</strong><br>
-I have no idea what to put here. just give me more time to think. 
-</div><!-- // end moon phase HTML // -->
-
-
-<div class="promo promo-blue">
-<strong>Google Friend Connect</strong><br>
-<img src="googlefriendconnectglitch.gif" alt="Google Friend Connect"></a>
-<br>your friendship ended after THIS service was shutting down.</div>
-
-<div class="promo promo-yellow">
-
-<strong><a href="https://www.mozilla.org/en-US/firefox/">Mozilla Firefox</a></strong>
-<br>
-<a href="https://www.mozilla.org/en-US/firefox/" onclick=""><img src="retrofficon.gif" alt="Mozilla Firefox"></a>
-<br>Browse the web with the power of Mozilla. Searching just got faster, easier, and safer. Because Google Chrome is a steaming pile of crap.</div>
-
-<style>
-
-
-    
-    td{
-        background:black;
-        color:white;
-    }
- 
-</style> 
-
- 
-<!--CODE-->
-
-    <div id="calendar-container">
-        <!--<div id="MyClockDisplay" class="clock" onload="showTime()" style="font-size: 20px;letter-spacing: 4px;text-align:center;background-color:black;border-top:3px ridge black;border-left:3px ridge black;border-right:3px ridge black;color:white;border-bottom:none;width:193px;margin-left:0px"></div>-->
-
-<script type="text/javascript">function showTime(){
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
-    var session = "AM";
-    
-    if(h == 0){
-        h = 12;
-    }
-    
-    if(h > 12){
-        h = h - 12;
-        session = "PM";
-    }
-    
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
-    
-    var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
-    
-   setTimeout(showTime, 1000);
-    
-}
-
-showTime();</script>
-<div class="calendar" align="center" style="background-color: black;border: 3px ridge black;color:white;font-size: 12px;">
-<script text="JavaScript">
- 
-monthnames = new Array(
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December'
-);
-var linkcount = 0;
-class addlink {
-  constructor(month, day, href) {
-    var entry = new Array(3);
-    entry[0] = month;
-    entry[1] = day;
-    entry[2] = href;
-    this[(linkcount += 1)] = entry;
-  }
-}
- 
-Array.prototype.addlink = addlink;
-linkdays = [];
-monthdays = new Array(12);
-monthdays[0] = 31;
-monthdays[1] = 28;
-monthdays[2] = 31;
-monthdays[3] = 30;
-monthdays[4] = 31;
-monthdays[5] = 30;
-monthdays[6] = 31;
-monthdays[7] = 31;
-monthdays[8] = 30;
-monthdays[9] = 31;
-monthdays[10] = 30;
-monthdays[11] = 31;
-todayDate = new Date();
-thisday = todayDate.getDay();
-thismonth = todayDate.getMonth();
-thisdate = todayDate.getDate();
-thisyear = todayDate.getYear();
-thisyear = thisyear % 100;
-thisyear = thisyear < 50 ? 2000 + thisyear : 1900 + thisyear;
-if ((thisyear % 4 === 0 && !(thisyear % 100 === 0)) || thisyear % 400 === 0) {
-  monthdays[1] += 1;
-}
-startspaces = thisdate;
-while (startspaces > 7) {
-  startspaces -= 7;
-}
-startspaces = thisday - startspaces + 1;
-if (startspaces < 0) {
-  startspaces += 7;
-}
-document.write("<font face='arial'>");
-document.write('<table border=0 ');
-document.write('<cellpadding=2 cellspacing=4>');
-document.write(
-  '<tr><td colspan=7><center>' +
-  monthnames[thismonth] +
-  ' ' +
-  thisyear +
-  '</strong></center></font></td></tr>'
-);
-document.write('<tr>');
-document.write('<td align=center><b>S</b></td>');
-document.write('<td align=center><b>M</b></td>');
-document.write('<td align=center><b>T</b></td>');
-document.write('<td align=center><b>W</b></td>');
-document.write('<td align=center><b>T</b></td>');
-document.write('<td align=center><b>F</b></td>');
-document.write('<td align=center><b>S</b></td>');
-document.write('</tr>');
-document.write('<tr>');
-for (s = 0; s < startspaces; s += 1) {
-  document.write('<td> </td>');
-}
-count = 1;
-while (count <= monthdays[thismonth]) {
-  for (b = startspaces; b < 7; b += 1) {
-    linktrue = false;
-    document.write('<td>');
-    for (c = 0; c < linkdays.length; c += 1) {
-      if (linkdays[c] != null) {
-        if (linkdays[c][0] === thismonth + 1 && linkdays[c][1] === count) {
-          document.write('<a href="' + linkdays[c][2] + '">');
-          linktrue = true;
-        }
-      }
-    }
-    if (count === thisdate) {
-      document.write("<b><font color='white'></b>");
-    }
-    if (count <= monthdays[thismonth]) {
-      document.write(count);
-    } else {
-      document.write(' ');
-    }
-    if (count === thisdate) {
-      document.write('</font>');
-    }
-    if (linktrue) {
-      document.write('</a>');
-    }
-    document.write('</td>');
-    count += 1;
-  }
-  document.write('</tr>');
-  document.write('<tr>');
-  startspaces = 0;
-}
-document.write('</table></p>');
 </script>
- 
-</font></div>
-</div>
-<!-------Do not change below this line-------><!--<div align="center"><iframe src="//widget.calendarlabs.com/v1/calendar.php?cid=1001&ver=1.2&uid=1562517662&c=8&l=en&cbg=000000&cfg=FFFFFF&hfg=FFFFFF&hfg1=FFFFFF&ct=1&cb=1&cbc=FFFFFF&cf=verdana&cp=bottom&sw=0&hp=t&ib=0&ibc=&i=images/" align="center"  width="170" height="155" marginwidth=0 marginheight=0 frameborder=no scrolling=no allowtransparency='true'>Loading...</iframe><div align="center" style="width:140px;font-size:10px;color:#333;">Calendar Widget by <a href="https://www.calendarlabs.com/" target="_blank" rel="nofollow" style="font-size:10px;text-decoration:none;color:#333;">CalendarLabs</a></div></div>--><!-------Do not change above this line-------><br>
-<!-- <a href='http://internetometer.com/give/50041'><img src='http://internetometer.com/image/50041.png'/></a>-->
-<!-- 
+<script src="https://adrianotiger.github.io/web-esheep/dist/esheep.min.js"></script>
+<script src="xp_popup.js"></script>
+<script src="myjs.js"></script>
+<script>
+function setCookie(cname, cvalue) {
+  document.cookie = cname + "=" + cvalue;
+}
 
--->
-<!-- // Begin Current Moon Phase HTML (c) MoonConnection.com // --><table cellpadding="0" cellspacing="0" border="0" width="212"><tr><td align="center"><a href="https://www.moonconnection.com" target="mc_moon_ph"><img src="https://www.moonmodule.com/cs/dm/hn.gif" width="212" height="136" border="0" alt="" /></a><div style="position:relative;width:128px;"><div style="position:absolute;top:-20px;left:6px;background:#000000;width:116px;text-align:center;"><a href="https://www.moonconnection.com/moon_phases.phtml" target="mc_moon_ph"><font color="#7F7F7F" size="1" face="arial,helvetica,sans-serif"><span style="color:#7F7F7F;font-family:arial,helvetica,sans-serif;font-size:10px;">moon phases</span></a></font></div></div></td></tr></table><!-- // end moon phase HTML // -->
-
-<div style="display:none;" class="promo promo-green" id="rec1"></div>
-
-</div>
-
-
-<div class="g-unit content">
-
-<div class="g-section g-tpl-50-50 contentr1">
-<div class="g-unit g-first contentr1c1">
-
-
-
-<h2>Our Products</h2>
-<p>
-<a href="help.html">Help</a>
-<br>Help.. with things. right now its only keyboard shortcuts with searches</p>
-<p>
-<p>
-<a href="options/">RetroJCity Services &amp; Tools</a>
-
-<br><s>Toolbar, RetroJCity Web APIs</s>, Buttons...</p>
-<p>
-<a href="labs.html">RetroJCity Labs</a>
-<br>Ideas, Demos, Experiments...</p>
-
-</div>
-<div class="g-unit contentr1c2">
-<h2>For Site Owners</h2>
-<p>Absolutely nothing yet.</p>
-</div>
-
-</div>
-<div class="g-section g-tpl-50-50 contentr2">
-<div class="g-unit g-first contentr2c1">
-<h2><s>Our Company</s> About Me</h2>
-    <p>Hi welcome to my search engine/personal website.</p>
-
-    <p>You may remember me from Scratch.</p>
-
-    <p>My name is GlitchyZorua, or GZ for short</p>
-
-    <p> I'm a human on the internet doing... stuff</p>
-    <p> I like programming and photography, and hugs!</p>
-    <p> Pronouns: he/him   Gender: Male</p>
-
-    <p> This is just a copy of Old Google webpage -- because i like the old google layout</p>
-    <i> This site isn't owned or endorsed by Google, obviously.</i>
-    <a href="https://en.pronouns.page/@glitchyzorua">View pronouns.page</a>
-</div>
-<div class="g-unit contentr2c2">
-<h2>More RetroJCity</h2>
-<p>
-<a href="contact.html">Contact Me</a>
-<br>FAQs, Feedback, <s>Newsletter</s>, Social Media...</p>
-<p>
-<a href="http://emilyisaway.com/hypnospace/?hex=00FFFF&c1=1&c2=1&c3=2&c4=2&user=GlitchyZorua">View my Hypnospace Emily Is Away 2 Page</a>
-<br>Thanks Hypii...</p>
-<p>
-<a href="http://community.webtv.zone/glitchyzorua/glitchyzoruascoolwebsite/">View my cool WebTV Page</a>
-<br>bebtv</p>
-<p>
-<a href="http://community.webtv.zone/GlitchyZorua2/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</a>
-<br>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="g-section footer">
-
-<p>
-    🄯2023-2024 RetroJCity - <a href="https://gist.github.com/GlitchyZorua/d2b2183e27fa59f00719163dfc851d26">Privacy Policy</a> - <a href="https://neocities.org/terms">Terms of Service</a><br>
-</p>
-<!-- This is the melonlink banner script and can go anywhere! -->
-<script src="https://melonking.net/scripts/melonLinks.js"></script>
-<!-- This will become a melon link banner! -->
-<br><br>
-	<span class="melonLink" data-melon-link-format="club-400x40"></span>
-<!-- Optional styling! -->
-	<style> 
-  .melonLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
   }
-  
-  .melonLink img {
-    border-radius: 30px;
+  return "";
+}
+/*/
+function loadleakyScript() {
+    const script = document.createElement('script');
+    // script.src = 'https://melonking.net/scripts/flood.js';
+    script.src = "flood.js";
+    script.id = 'dynamicScript';
+    document.head.appendChild(script);
   }
-  </style>
-</div>
-</div>
-
-<!--
-<script type="text/javascript" language="javascript" src="https://web.archive.org/web/20090422151207js_/https://ssl.google-analytics.com/urchin.js"></script>
-<script type="text/javascript" language="javascript">
- _uacct="UA-18000-1";
- _utcp="/";
- _uanchor=1;
- urchinTracker();
+  if (document.cookie === "" || document.cookie === null) {
+    loadleakyScript();
+  } else {
+    if (getCookie('feature3') === "false") {
+      loadleakyScript();
+    }
+  }
+  /*/
 </script>
 
-<script type="text/javascript" language="javascript" src="https://web.archive.org/web/20090422151207js_/http://www.google.com/receng/js/receng.js"></script>
-<script type="text/javascript" language="javascript">
-  function getRecommendations() {
-    var recEng = new goog.RecEng();
-    recEng.config = recEng.CONSUMER;
-    recEng.layout = formatPromo;
-    recEng.caller = "about";
-    recEng.divs = [ "rec1"];
-    recEng.recommend();
-  }
-  
-  function formatPromo(div,rec){
-    document.getElementById(div).innerHTML='<a href="'+rec.callToActionUrl+'"><strong>'+rec.longTitle+'</strong></a><br />'+rec.shortDescription;
-    document.getElementById(div).style.display='block';
-  }
-  getRecommendations();
+</body>
+<script src="oneko.js"></script>
+<!-- <script src="nochrm.js"></script> -->
+<script src="beat.js"></script>
+<link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
+<!--<script src="https://melonking.net/scripts/flood.js"></script>-->
+<script defer src="https://melonking.net/scripts/swatchTime.js"></script>
+<script src="https://cursor-party.glitchyzorua.partykit.dev/cursors.js"></script>
+<script type="text/javascript" src='hexclock.js'></script>
 
+<script>
+console.log("┬ ┬┌─┐┬  ┬  ┌─┐┬\n├─┤├┤ │  │  │ ││\n┴ ┴└─┘┴─┘┴─┘└─┘o");
 </script>
--->
 </body>
 </html>
-<!--
-     FILE ARCHIVED ON 15:12:07 Apr 22, 2009 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 22:07:39 Oct 31, 2023.
+<!--<div id="banner-small" style="flex-direction: column; text-align: center; display: none; color: red;"><p><b>Stop using Chromium browsers, Google is trying to kill off ad and tracker blockers! </b><a href="https://gianmarco.gg/blinky"><b>Learn more</b></a> or <a onclick="hideNavWarn()"><b>close</b></a>.</p></div>-->
+<style>
+/* Navigation specific styles */
+#gbar, #guser, #gbi, .gb2 {
+    font-size: 13px;
+}
+
+#gbar {
+    float: left;
+    font-weight: bold;
+    height: 22px;
+    padding-left: 2px;
+    padding-top: 1px !important;
+}
+
+#gbh {
+    border-top: 1px solid #c9d7f1;
+    font-size: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    width: 200%;
+}
+
+#gbi {
+    background: #fff;
+    border: 1px solid;
+    border-color: #c9d7f1 #36c #36c #a2bae7;
+    top: 24px;
+    z-index: 1000;
+}
+
+#guser {
+    padding-bottom: 7px !important;
+}
+
+@media all {
+    .gb1, .gb3 {
+        height: 22px;
+        margin-right: .73em;
+        vertical-align: top;
+    }
+}
+
+#gbi, .gb2 {
+    display: none;
+    position: absolute;
+    width: 8em;
+}
+
+.gb2 {
+    z-index: 1001;
+}
+
+#gbar a, #gbar a:active, #gbar a:visited {
+    color: cyan;
+    font-weight: normal;
+}
+
+.gb2 a, .gb3 a {
+    text-decoration: none;
+}
+
+.gb2 a {
+    display: block;
+    padding: .2em .5em;
+}
+
+#gbar .gb2 a:hover {
+    background: #36c;
+    color: #fff;
+}
+</style>
+ <center>
+  <div align="left" nowrap style="padding-bottom:4px" width="100%">
+  <div id="gbar"><nobr><span class="gb1">Home</span> <span class="gb1"><a href="about.html">About</a></span> <span class="gb1"><a href="archive.html">Archive</a></span> <span class="gb1"><a href="/pages/articles/articles.html">Blogs</a></span> <span class="gb1"><a href="games.html">Games</a></span> <span class="gb1"><a href="/pages/microblogs.html">Micro-Blogs</a></span><a href="/projects/projects.html">Projects</a> <a href="links.html">Links</a> <a href="/photos/index.html">Photos</a></span><span class="gb3"></span></nobr></div></center>
+ <center>
+  <div align="right" nowrap style="padding-bottom:4px" width="100%">
+  <span size="-1">
+  <a href="https://neocities.org/dashboard">Personalize this page</a>&nbsp;|&nbsp;
+  <a href="https://neocities.org/signin">Sign in</a></span></div><img alt="Sign In" height="110" src="logo.gif" width="400"><br><br>
+
+  <br>
+  <br>
+  <!-- <form action="/web//http://www.google.com/search" name="url">-->
+  <script defer>
+  //<!--
+function togDisp(e){stopB(e);var elems=document.getElementsByName('more');for(var i=0;i<elems.length;i++){var obj=elems[i],dp="";if(obj.style.display==""){dp="none";}obj.style.display=dp;}return false;}
+function stopB(e){if(!e)e=window.event;e.cancelBubble=true;}
+document.onclick=function(event){var elems=document.getElementsByName('more');if(elems[0].style.display==""){togDisp(event);}}
+//-->
+</script>
+  <script src="splashes.js"></script>
+  <div id="quotes"></div>
+<table border="0" cellspacing="0" cellpadding="4">
+  <tr><td nowrap>
+    <span size="-1">
+      <b>Web</b>
+      &nbsp;&nbsp;&nbsp;&nbsp;<a class="q" href="https://neocities.org">Neocities</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a class="q" href="https://www.startpage.com/?cat=images">Images</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a class="q" href="https://piped.video">Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="q" href="/pages/news">News</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a class="q" href="https://www.openstreetmap.org/">Maps</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<b><a href="javascript:alert('soon.')" class="q" onclick="this.blur();return togDisp(event)">more&nbsp;&raquo;</a></b>
+  <span name="more" id="more" style="display:none;position:absolute;background:#000;border:1px solid #369;margin:-.5ex 2ex;padding:0 0 .5ex .8ex;width:16ex;line-height:1.9;z-index:1000" onclick="stopB(event)">
+    <a href="#" onclick="return togDisp(event)"><img border="0" src="x2.gif" width="12" height="12" alt="Close menu" align="right" hspace="4" vspace="4"></a>
+    <a class="q" href="https://write.as/">Make Blogs</a><br>
+    <a class="q" href="/pages/articles/articles.html">My Blogs</a><br>
+    <a class="q" href="microblogs.html">My Micro-Blogs</a><br>
+    <a class="q" href="games.html">Games</a><br>
+    <a class="q" href="archive.html">Archive</a><br>
+    <a class="q" href="https://openlibrary.org/">Books</a><br> <!-- rip zlib -->
+    <a class="q" href="javascript:alert('stop trying to access dead google products')">Froogle</a><br>
+    <a class="q" href="javascript:alert('no.')">Groups</a><br>
+    <a class="q" href="https://en.wikipedia.org/wiki/Criticism_of_patents?useskin=vector">Patents</a><br>
+    
+    <a href="javascript:alert('nothing yet.')" class="q"><b>even more &raquo;</b></a></span></span></td></tr></table>
+    <table cellpadding="0" cellspacing="0"><tr valign="top"><td width="25%">&nbsp;</td><td align="center" nowrap><input name="hl" type="hidden" value="en"><input type="hidden" name="ie" value="ISO-8859-1"><input autofocus placeholder="Search..." type="text" id="url" size="55"><script src="searchthing.js"></script><select id="searchEngineSelect"></select><br>
+    <input name="gowww" type="submit" value="WWW Search">
+    <input name="gonc" type="submit" value="Neocities Search">
+    <input name="luck" type="submit" value="I'm Feeling Lucky"></td>
+    <td nowrap width="25%">&nbsp;&nbsp;<a href="javascript:alert('There is no advanced search.')">Advanced Search</a>
+      <br>&nbsp;&nbsp;<a href="./settings.html">Preferences</a> <!-- https://www.startpage.com/do/settings?query&lui=english -->
+      <br>&nbsp;&nbsp;<a href="javascript:alert('we only speak english. you can speak english, right?')">Language Tools</a>
+      <!-- <br>&nbsp;&nbsp;<a href="">Play Music</a>--></td></tr></table></form><br><table><tr><td valign="center">
+      <!--
+      <img src="tombstone-svgrepo-com.svg" alt="" width="50" height="33"></td><td valign="center"><span size="-1">R.I.P, Mr. Dark Goose; 2007 ~ 2024</b><br><br>-->
+    </span></td></tr></table>
+       
+        <!-- <img src="hpp-cart-glitch.gif" alt="" width="40" height="22"></td><td valign="center"><span size="-1">RetroJCity is non-profit. we don't make money from hosting this site on Neocities. <br><a href="https://discord.gg/Ms4NFJb">You can join the Discord Server, if you wish!</a> <b>I don't accept donations as of right now.</b> </span></td></tr></table> 
+        
+            <img src="skglogo.svg" alt="" width="40" height="22"></td><td valign="center"><font size="-1">Tired of your always online games dying due to the publishers killing it? You are not alone. Visit <br><a href="https://www.stopkillinggames.com/">stopkillinggames.com</a> right now! <b>You can make a difference.</b>-->
+      
+        <br><br>
+        <style>
+        @font-face {
+           font-family: "clockfont";
+           src: url("alarm_clock.ttf");
+        }
+
+
+      .clock {
+        font-family: clockfont;
+          font-size: 40px;
+        }
+        </style>
+<span>Your user agent is </span><span id="outputagent"></span>
+<p id="youknowicanseeyoulookingatthiscoderight"></p>
+  <script>
+    // Get the user agent string
+    var userAgent = navigator.userAgent;
+
+ 
+    document.getElementById("outputagent").textContent = userAgent;
+  </script>
+ 
+<script>
+var highlightElement;
+
+function updateHighlightTime() {
+  var time = new Date();
+  var h = time.getHours();
+  var m = time.getMinutes();
+  var s = time.getSeconds();
+
+  // Format time with leading zeros
+  h = h.toString().padStart(2, "0");
+  m = m.toString().padStart(2, "0");
+  s = s.toString().padStart(2, "0");
+
+  // Combine formatted time for hex color
+  var hex = "#" + h + m + s;
+
+  // Get the element to be highlighted (assuming an element with ID "time")
+  highlightElement = document.getElementById("time");
+
+  // Create a span element to wrap the highlighted text
+  var highlightSpan = document.createElement("span");
+  highlightSpan.textContent = '#'+ h + m + s;
+  highlightSpan.style.backgroundColor = hex; // Set background for highlighting
+
+  // Clear previous content (if any)
+  highlightElement.innerHTML = "";
+
+  // Append the highlighted time within the element
+  highlightElement.appendChild(highlightSpan);
+}
+
+// Assuming you have an element with ID "time"
+highlightElement = document.getElementById("time");
+
+// Set initial highlight on page load
+//updateHighlightTime();
+
+// Update highlight every second
+setInterval(updateHighlightTime, 1000);
+
+  function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  let ampm = h >= 12 ? 'PM' : 'AM';
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s+" "+ampm;
+  
+    // get a new date (locale machine date time)
+var date = new Date();
+// get the date as a string
+var n = date.toDateString();
+// get the time as a string
+// var time = date.toLocaleTimeString();
+
+// find the html element with the id of time
+// set the innerHTML of that element to the date a space the time
+document.getElementById('date').innerHTML = n;
+  setTimeout(startTime, 1000);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+document.addEventListener("DOMContentLoaded", function() {
+    var url = document.getElementById('url');
+    var gowww = document.getElementsByName('gowww')[0];
+    var gonc = document.getElementsByName('gonc')[0];
+    var luck = document.getElementsByName('luck')[0];
+
+    function searchstartpage() {
+      if (url.value) {
+        window.location.assign("https://www.startpage.com/sp/search?query=" + encodeURI(url.value));
+      }
+    }
+    function searchwww() {
+      if (url.value) {
+       // const searchUrl = searchEngineSelect.value; + encodeURI(url.value);
+       if (searchEngineSelect.value === "Google (No AI)"){
+         //alert('Click on the "Web" tab in the google search');
+         window.location.assign(searchEngineSelect.value + encodeURI(url.value) + "&udm=14");
+       } else {
+        window.location.assign(searchEngineSelect.value + encodeURI(url.value));
+       }
+      }
+    }
+    function searchneocities() {
+      if (url.value) {
+        window.location.assign("https://neocities.org/browse?sort_by=followers&tag=" + encodeURI(url.value));
+      }
+    }
+
+    function searchluck() {
+      if (url.value === "the cake is a lie") {
+        window.location.assign('https://www.youtube.com/watch?v=JAw3V8ScLeI');
+        return;
+      }
+      if (url.value === "fandom") {
+        window.location.assign('https://www.youtube.com/watch?v=qcfuA_UAz3I');
+        return;
+      }
+      if (url.value === "orgin") {
+        window.location.assign('https://windows93.net');
+        return;
+      }
+      if (url.value === "list") {
+        window.location.assign('https://github.com/GlitchyZorua/GlitchyZorua.github.io/blob/main/projects/random/neocities/random.html');
+        return;
+      }
+      if (url.value === "ding"){
+        alert('fries are ready.');
+        return;
+      }
+      if (url.value == "computer"){
+        window.location.assign('https://www.youtube.com/watch?v=aAtF-Zzdnc8')
+        return;
+      }
+      if (url.value == "surprise"){
+        window.location.assign('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
+        return;
+      }
+      if (url.value == "sdjlkfgjfsdlkgfdjglfkdjgfdlkg") {
+        alert('you\'ve looked in the code. congrats. nothing will happen.');
+        return;
+      }
+      if (url.value == "shoot em up"){
+        var KICKASSVERSION='2.0'
+           var s = document.createElement('script')
+           s.type='text/javascript'
+           document.body.appendChild(s)
+           s.src='//hi.kickassapp.com/kickass.js'
+           void(0); 
+           return;
+      }
+      if (url.value == "make text go boom boom"){
+         (function () {var s = document.createElement('script');s.setAttribute('src', 'http://fontbomb.ilex.ca/js/main.js');document.body.appendChild(s);}());
+        return
+      }
+      if (url.value == "best cooking site"){
+      window.location.assign("https://based.cooking/");
+      return
+      }
+        window.location.assign("https://GlitchyZorua.github.io/projects/random/neocities/random.html");
+      
+    }
+    //gowww.addEventListener("click", searchstartpage);
+    gowww.addEventListener("click", searchwww);
+    gonc.addEventListener("click", searchneocities);
+    luck.addEventListener("click", searchluck);
+    
+url.addEventListener('keydown', (event) => {
+
+      if (event.shiftKey && event.key === "Enter"){
+            searchneocities();
+       return;
+      }
+      if (!event.shiftKey && event.key === 'Enter') {
+        searchwww();
+        return;
+      }
+    });
+  });
+  /*/
+  if (event.shiftKey) {
+    keys.Shift = true;
+  }
+  if (event.key === "Enter") {
+    keys.Enter = true;
+  }
+/*/
+    </script>
+<body onload="startTime()">
+        <div id="clockfont">
+          <time><div id="clock" class="clock"></div></time> 
+        </div>
+</body>     
+
+    </p>
+
+<script src="https://cdn.jsdelivr.net/npm/time-moji@latest/time-moji.js">
+// Clock Emoji
+const emoji = document.querySelector('.emoji');
+emoji.textContent = Tmj.getTimeMoji(new Date(), 'clock');
+// Landscape Emoji
+const landscape = document.querySelector('.landscape');
+landscape.textContent = Tmj.getTimeMoji(new Date(), 'landscape');
+</script>
+<script src="zodiac.js"></script><script src="chinazodiac.js"></script><span id="swatchClock">@000</span> - <span id="date"></span> <span id="zodiac-container"></span><span id="zodiacEmoji"></span> - <span class="emoji"></span> <span class="landscape"></span> - <span id="time"><span class="time">#FFFFFF</span></span> - <a href="https://www.imood.com/users/GlitchyZorua"><a href="https://www.imood.com/users/GlitchyZorua"><img src="https://moods.imood.com/display/uname-GlitchyZorua/fg-FFFFFF/bg-000000/imood.gif" alt="The current mood of GlitchyZorua at www.imood.com" border="0"></a></span>
+<script>
+
+</script>
+<script defer src="https://melonking.net/scripts/swatchTime.js"></script> 
+
+
+        <!--
+        === solarize ===
+        brightness: 0.8
+        power: 1
+        colorize: 0
+        === Brightness & Contrast ===
+        contrast: 0.75
+        brightness: -0.2
+        === Rgb shift ===
+        amount: 0
+        === instacolor ===
+        strength: 0
+        style:1
+        === jitter ===
+        amount: 0.2
+        speed:1
+        === edges ===
+        amount: 0.46
+        passthru: 0.49
+
+        https://photomosh.com/
+        -->
+        
+        <br><br>
+        <script defer src="https://melonking.net/scripts/swatchTime.js"></script>
+
+<script>
+function BeatsUntilMidnight() {
+    var currentBeats = parseFloat(GetSwatchTime(false));
+    var totalBeatsInDay = 1000;
+    var remainingBeats = totalBeatsInDay - currentBeats;
+    return remainingBeats === 0 ? totalBeatsInDay : remainingBeats;
+}
+
+function updateCountdown() {
+    var closeCountdownElement = document.getElementById("close_countdown");
+    if (closeCountdownElement) {
+        closeCountdownElement.innerHTML = BeatsUntilMidnight();
+    }
+}
+
+function showForumStatus() {
+    var forumStatusElement = document.getElementById("forum_status");
+    var beatsLeft = BeatsUntilMidnight();
+
+    if (isSwatchMonday()) {
+        forumStatusElement.innerHTML = `<strong>Boop!</strong> The Melonland Forum <a href="https://wiki.melonland.net/forum_help#why_is_the_forum_closed_on_mondays" target="_blank">will re-open</a> in <strong id="close_countdown">${beatsLeft}</strong>.beats!`;
+    } else if (isSwatchSunday()) {
+        forumStatusElement.innerHTML = `<strong>Boop!</strong> The Melonland Forum <a href="https://wiki.melonland.net/forum_help#why_is_the_forum_closed_on_mondays" target="_blank">will close</a> in <strong id="close_countdown">${beatsLeft}</strong>.beats!`;
+    } else {
+        forumStatusElement.innerHTML = ""; // Clear the status if it's neither Sunday nor Monday
+    }
+}
+
+function isSwatchMonday() {
+    const now = new Date();
+    const utcPlus1 = new Date(now.getTime() + 3600000); // Add 1 hour (3600000 ms)
+    return utcPlus1.getUTCDay() === 1; // Monday
+}
+
+function isSwatchSunday() {
+    const now = new Date();
+    const utcPlus1 = new Date(now.getTime() + 3600000); // Add 1 hour (3600000 ms)
+    return utcPlus1.getUTCDay() === 0; // Sunday
+}
+
+// Execute on load
+document.addEventListener("DOMContentLoaded", function() {
+    showForumStatus();
+    setInterval(updateCountdown, 1000); // Update every second
+});
+</script>
+
+<div id="forum_status"></div>
+
+<a href="./files/buttons"> <img src="./files/retrojcity.png"></a>
+        
+        <script>
+
+    // This is what happens. If we fucking have two mirrors, similar shit. Messy code like this.
+    // oh well. i guess thats what i get for using GitHub Pages.
+    function noDiscord(){
+      alert("Discord server is closed indefinitely, sorry! ");
+      }
+if (window.location.host === "glitchyzorua.github.io" || window.location.host === "GlitchyZorua.github.io") { 
+      document.write("<br><br><font size=\"-1\"><a href=\"https:\/\/retrojcities.neocities.org\">Neocities Site<\/a> - <a href=\"https:\/\/github.com\/GlitchyZorua\">GitHub Profile<\/a> - <a href=\"about.html\">About Me<\/a> - <a href=\"https:\/\/users3.smartgb.com\/g\/g.php?a=s&i=g36-34400-4f\">Sign My Guestbook<\/a> - <a href=\"\/pages\/news\">Site News<\/a> - <a href=\"https://my.liberaforms.org/retrojcity-im-feeling-lucky-removal-request\">IFL Opt-Out<\/a> - <a href=\"\/pages\/articles\/articles\">Blogs<\/a> - <a href=\"\/pages\/microblogs.html\">Micro-Blog<\/a> - <a href=\"https://letters.melonland.net/join.php?list=5\">Newsletter<\/a> - <a href=\"https:\/\/matrix.to\/#\/#RetroJSpace:matrix.org\">Matrix<\/a> - <a href=\"https:\/\/wetdry.world\/@GlitchyZorua\/\">Mastodon<\/a> - <a href=\"https:\/\/forum.melonland.net\/index.php?action=profile;u=1880\">Melonland Forum<\/a> - <a href=\"bluesky.html\">BlueSky Bridge<\/a> - <a href=\"https:\/\/gist.github.com\/GlitchyZorua\/d2b2183e27fa59f00719163dfc851d26\">Privacy Policy<\/a><\/font><p>\ud83c\udd2f 2023-2025 RetroJCity<\/p><br><br><br>");
+  } else if (window.location.host === "retrojcities.neocities.org") {
+      document.write("<br><br><font size=\"-1\"><a href=\"https:\/\/glitchyzorua.github.io\">GitHub Mirror<\/a> - <a href=\"https:\/\/neocities.org\/site\/retrojcities\">Neocities Profile<\/a> - <a href=\"about.html\">About Me<\/a> - <a href=\"https:\/\/users3.smartgb.com\/g\/g.php?a=s&i=g36-34400-4f\">Sign My Guestbook<\/a> - <a href=\"\/pages\/news\">Site News<\/a> - <a href=\"\/pages\/articles\/articles\">Blogs<\/a> - <a href=\"\/pages\/microblogs.html\">Micro-Blog<\/a> - <a href=\"https://my.liberaforms.org/retrojcity-im-feeling-lucky-removal-request\">IFL Opt-Out<\/a> - <a href=\"https://letters.melonland.net/join.php?list=5\">Newsletter<\/a> - <a href=\"https:\/\/matrix.to\/#\/#RetroJSpace:matrix.org\">Matrix<\/a> - <a href=\"https:\/\/wetdry.world\/@GlitchyZorua\">Mastodon<\/a> - <a href=\"https:\/\/forum.melonland.net\/index.php?action=profile;u=1880\">Melonland Forum<\/a> - <a href=\"bluesky.html\">BlueSky Bridge<\/a> - <a href=\"https:\/\/gist.github.com\/GlitchyZorua\/d2b2183e27fa59f00719163dfc851d26\">Privacy Policy<\/a><\/font><br><p>\ud83c\udd2f 2023-2025 RetroJCity<\/p><br><br><br>");
+  } else {
+    console.warn('Bottom Bar cannot detect if you are on the github mirror or not. Using dummy mode.');
+    document.write("<br><br><font size=\"-1\"><a href=\"https:\/\/glitchyzorua.github.io\">GitHub Mirror<\/a> - <a href=\"https:\/\/retrojcities.neocities.org\">Neocities Site<\/a> - <a href=\"https:\/\/neocities.org\/site\/retrojcities\">Neocities Profile<\/a> - <a href=\"about.html\">About Me<\/a> - <a href=\"https:\/\/users3.smartgb.com\/g\/g.php?a=s&i=g36-34400-4f\">Sign My Guestbook<\/a> - <a href=\"\/pages\/news\">Site News<\/a> - <a href=\"\/pages\/articles\/articles\">Blogs<\/a> - <a href=\"\/pages\/microblogs.html\">Micro-Blog<\/a> - <a href=\"https://my.liberaforms.org/retrojcity-im-feeling-lucky-removal-request\">IFL Opt-Out<\/a> - <a href=\"https:\/\/wetdry.world\/@GlitchyZorua\/\">Mastodon<\/a> - <a href=\"https:\/\/forum.melonland.net\/index.php?action=profile;u=1880\">Melonland Forum<\/a> - <a href=\"https://letters.melonland.net/join.php?list=5\">Newsletter<\/a> - <a href=\"https:\/\/matrix.to\/#\/#RetroJSpace:matrix.org\">Matrix<\/a> - <a href=\"https:\/\/wetdry.world\/@GlitchyZorua\/\">Mastodon<\/a> - <a href=\"bluesky.html\">BlueSky Bridge<\/a> - <a href=\"https:\/\/gist.github.com\/GlitchyZorua\/d2b2183e27fa59f00719163dfc851d26\">Privacy Policy<\/a><\/font><p>\ud83c\udd2f 2023-2025 RetroJCity<\/p><br><br><br>");
+  }
+          </script>
+ 
+          <div><iframe src="https://kingposs.com/kpradiocompact.html" allowtransparency="true" frameborder="0" scrolling="no" style="overflow:hidden; width: 230px; height: 100px; "></iframe></div>
+        <a href="http://www.nerdtests.com/ft_cg.php?im">
+<img src="http://www.nerdtests.com/images/ft/cg.php?val=9720" alt="My computer geek score is greater than 68% of all people in the world! How do you compare? Click here to find out!"><br><br><br>
+            
+            <!-- <a href="https://www.websiteout.net/counter.php"><img src="//counter.websiteout.net/compte.php?S=retrojcities.neocities.org&amp;C=6&amp;D=0&amp;N=0&amp;M=0" alt="web hit counter" border="0"><br><br> --> <!-- Doesn't work anymore -->
+    <a href="https://flagcounter.me/details/dJu"><img src="https://flagcounter.me/dJu/" alt="Flag Counter"></a><br><br>
+    <a href='http://internetometer.com/give/50041'><img src='http://internetometer.com/image/50041.png'/></a><br><br>
+    <iframe src="//incr.easrng.net/badge?key=retrojcity" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe><br><br>
+     <a href="https://sugarforbrains.neocities.org/"><img src="sugarbutton1.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://sugarforbrains.neocities.org/"><img src="button.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://sugarforbrains.neocities.org/"><img src="sugarOG.gif" name="HTTPS://SUGARFORBRAINS.NEOCITIES.ORG/" width="88" height="31" border="0"></a><a href="https://y2k.gov"><img src="/files/y2k.gif"></a><a href="https://www.amazon.com"><img src="./files/amazon.gif"></a><a href="https://www.mozilla.org/en-US/firefox/new/"><img src="./files/firefoxnow.gif"></a><a href="https://joinmastodon.org/"><img src="./files/masto.gif"></a><img href="/files/bank88.gif"><a href="https://googol.neocities.org/"><img src="https://googol.neocities.org/googol_thumb.gif"></a><!-- <a href="https://districts.neocities.org/"><img src="https://districts.neocities.org/buttons/districtspippin.png"></a>--><a href="https://www.netflix.com"><img src="./files/netflix-88x31.gif"></a><img src="./files/blank88.gif"><img src="./files/anybrowser.gif"><a href="https://www.nationalgeographic.com/"><a href ="https://www.nationalgeographic.com/"><img src='./files/NGS_88x31_logo.gif'></a><a href="https://www.theoldnet.com/"><img src=/files/theoldnetanimblur2.gif></a><img src="/files/Anaolsux.gif"><img href="/files/netflix-88x31.gif"><img href="/files/cheezit.gif"><a href="https://scratch.mit.edu/downloads/"><img src="/files/download_scratch.gif"></a><a href="https://giftscop.com/"><img src="./files/gcbutton_childlibrary.gif"></a><a href="https://sterophonick.github.io/index.html"><img src="./files/web_button.gif"></a><a href="https://gifypet.neocities.org/"><img src="./files/badge.gif"></a><a href="http://toastytech.com/evil/buttons.html"><img src="./files/stopieani.gif"><!--- <img src="./files/fartpage.gif">---> <img src="./files/exploit.gif"><img src="./files/nuts.gif"><img src="./files/iebad.gif"><img src="./files/iecrash.gif"><img src="./files/mandatory.gif"><img src="./files/idiotexpl.gif"><img src="./files/getmozilla.gif"><img src="./files/getmozilla2.gif"><img src="./files/getbsod.gif"><img src="./files/iemickey.gif"><img src="./files/ieborg.gif"><img src="./files/fuckie.gif"><img src="./files/ie1984.gif"><img src="./files/ieide.gif"><img src="./files/iebarf.gif"><!--<img src="./files/duh.gif">--><!-- <img src="./files/burniebtn.gif">--><img src="./files/washie.gif"><!-- <img src="./files/ieevil.gif">--><img src="./files/ieexplode.gif"><img src="./files/msiemoz.gif"></a><a href="https://wac.neocities.org/"><img src="https://i.imgur.com/XTmRsxw.jpg"></a><img src="./files/tj88x31.gif"><img src="./files/sears.png"><img src="./files/nbc.gif"><img src='./files/toys.gif'></img><a href="https://datgameryolo.neocities.org" title="DatGamerYolo's Website"><a href="https://gianmarco.gg/"><img src="files/gmgpin.gif"></img></a><a href="https://dokode.moe/"><img src="https://dokode.moe/media/88x31sites/dokodemobutton3.gif"></a><a href="https://store.steampowered.com/app/420530/OneShot/"><img src="files/OneShot_button.gif"></a><!--<img src="https://dokode.moe/media/88x31sites/dokodemobutton2.gif">--></a><!-- <a href="https://dimden.dev/"><img src="https://dimden.dev/services/images/88x31.gif"></a> fuck you dimden --><a href="https://osu.ppy.sh/users/35270913"><img src="/files/osu.png"></a><a href="https://rol.nekoweb.org/"><img src="https://rol.nekoweb.org/button.gif" alt="Enter Rol's Space Cabin'"c></a><img src="/files/ieisevil.gif"><!--<img src="https://datgameryolo.neocities.org/badbutton.png" alt="DatGamerYolo's Website">--><a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE.GIF" style="image-rendering: pixelated"></a><a href="https://melonking.net/melon.html?z=/frames/forum"><a href="https://melonland.net/"><img src="files/melonland-badge-2.gif"></a><a href="https://forum.melonland.net/"><img src="files/MELONLAND-FORUM.GIF"></a><img src="files/tor.gif"><img src="files/wii.gif"><!-- <a href="https://discord.gg/3ZM9SyKu8Z"><img src="files/neonet_green.gif">--> </a><a href="https://minecraft.net"><img src="files/minecraft.gif"></img></a><a href="https://steamcommunity.com/"><img src="files/steam.gif"></a><img src="files/mY3u0hA.gif"></img><img src="files/Ebay.gif"><a href="https://gifypet.neocities.org/?melonframe=true"><img src="files/gifypet.gif"></a><a href="https://tamanotchi.world/"><img src="files/tamanotchi.gif"></a></img><img src="pages/chrmevil.gif"><img src="pages/anythingbutchrome.gif"><img src="files/itoddler.gif"><img src="files/desktopviewing.gif"><a href="https://ublockorigin.com/"><img src="files/ublock-now.png"></a><img src="files/antinft.gif"><img src="files/tiktok.gif"><img src="files/web3.gif"><img src="files/tired.gif"><img src="files/dsbutton.gif"><img src="files/Anaolsux.gif"><a href="https://moule.world/"><img src="files/MOULEWORLD.gif"></a><a href="https://corvidae.digital/"><img src="./files/button2alt.gif"></a><a href="http://leoweo.ooo" target="_blank" rel="noreferrer"><img src="http://leoweo.ooo/img/button.png"></a><!-- Start Old'aVista Button Code --><p><a href="http://www.oldavista.com/" rel="embed-button" title="Old'aVista: The most powerful guide to the OLD internet!"><img src="//www.oldavista.com/public/button.gif" width="88" height="31" border="0"></a></p><!-- End Old'aVista Button Code --><br><br><br>
+<a href="https://tamanotchi.world/6314c"><img src="https://tamanotchi.world/i2/6314" alt="It's tamaNOTchi! Click to feed!"></a> <img src="http://www.mabsland.com/Pandas/Censor_NYRb.gif"><object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#ffffff" type="image/svg+xml" style="width: 100px; height: 100px;"></object>
+<div style="width:40px; height:40px; position:absolute; bottom:0px; left:0px;">
+<div id="app"></div>
+<script src="https://unpkg.com/webamp"></script>
+<script>
+
+    const app = document.getElementById("app")
+      // const webamp = new Webamp();
+    const webamp = new Webamp({
+    // Optional.
+    initialTracks: [
+        {
+            metaData: {
+                artist: "Tree Palm",
+                title: "Turn Me Around",
+            },
+            url: "https://glitchyzorua.github.io/files/Tree%20Palm%20-%20Turn%20Around%20-%20Tree%20Palm%20(youtube,%20B7plBbp76aU).mp3",
+        }, {
+          metaData: {
+            artist: "author (tbotv)",
+            title: "DELTAQUEST",
+          },
+          url: "https://glitchyzorua.github.io/files/sfx/64%20-%20DELTAQUEST%20-%20tbotv%20guy's%20music%20and%20sometimes%20other%20stuff%20(youtube,%200VCQKdoztEY).mp3",
+        }, {
+            metaData: {
+                artist: "Unknown",
+                title: "Purple Groove",
+            },
+            url: "https://glitchyzorua.github.io/files/youtube_tBglvCnUOE8_audio.mp3",
+        },
+        {
+            metaData: {
+                artist: "DJ Tronika",
+                title: "Dream With Me",
+            },
+            url: "https://glitchyzorua.github.io/files/Dream%20With%20Me.mp3",
+        },
+        {
+            metaData: {
+                artist: "glaciære", // glaciære 
+                title: "Confidence, Baby",
+            },
+            url: "https://glitchyzorua.github.io/files/glaci%C3%A6re%20-%20Two%20Months%20of%20Moments%20-%2007%20Confidence,%20Baby.mp3",
+        },
+        {
+            metaData: {
+                artist: "glaciære",
+                title: "Into the Maelstrom",
+            },
+            url: "https://glitchyzorua.github.io/files/sfx/glaci%C3%A6re%20-%20Two%20Months%20of%20Moments%20-%2001%20Into%20the%20Maelstrom.mp3",
+        },
+        {
+            metaData: {
+                artist: "Aquacycle & VaVr",
+                title: "ABCnymph",
+            },
+            url: "https://glitchyzorua.github.io/files/sfx/Aquacycle - VvvvvaVvvvvvr's Vighest Vuality Vips Vol - 27 ABCnymph.mp3",
+        },
+        {
+            metaData: {
+                artist: "New Order",
+                title: "Blue Monday",
+            },
+            url: "https://glitchyzorua.github.io/files/sfx/New%20Order%20-%20Blue%20Monday%20(Official%20Lyric%20Video)%20-%20New%20Order%20(youtube,%20c1GxjzHm5us).mp3",
+        },
+        {
+            metaData: {
+                artist: "C418",
+                title: "Certitudes",
+            },
+            url: "https://glitchyzorua.github.io/files/Certitudes%20-%20C418%20(youtube,%2072fGruG_LSY).mp3",
+        },
+        {
+          metaData: {
+                artist: "Christopher Saint & Who's Who?",
+                title: "Ulterior Motives",
+            },
+            url: "https://glitchyzorua.github.io/files/Ulterior%20Motives%20-%20Who's%20Who%20(youtube,%20nTXQ6-35e7o).mp3",
+        },
+        {
+          metaData: {
+                artist: "Sonic De Glitcher",
+                title: "Ulterior Motives ~ Sega Genesis Remix",
+            },
+            url: "https://GlitchyZorua.github.io/files/sfx/Who's Who - Ulterior Motives ~ Sega Genesis Remix - Sonic De Glitcher (youtube, TngvMIaJMoU).mp3",
+        },
+      ],
+});
+
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for (let c of ca) {
+            while (c.charAt(0) === ' ') c = c.substring(1);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
+        }
+        return null;
+    }
+ // 
+if (document.cookie === "" || document.cookie === null) {
+    webamp.renderWhenReady(app);
+  } else {
+    if (getCookie('feature6') === "false") {
+         webamp.renderWhenReady(app);
+    }
+  }
+
+ 
+
+ 
+</script>
+        <!--
+     FILE ARCHIVED ON 17:33:47 Jan 17, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:46:08 Oct 30, 2023.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -446,13 +643,216 @@ document.write('</table></p>');
 -->
 <!--
 playback timings (ms):
-  captures_list: 853.014 (11)
-  exclusion.robots: 0.314
-  exclusion.robots.policy: 0.298
-  cdx.remote: 0.102
-  esindex: 0.013
-  LoadShardBlock: 29.715 (3)
-  PetaboxLoader3.datanode: 38.419 (4)
-  load_resource: 54.291
-  PetaboxLoader3.resolve: 18.933
+  exclusion.robots: 1.391 (7)
+  exclusion.robots.policy: 1.305 (7)
+  cdx.remote: 0.609 (7)
+  esindex: 0.082 (7)
+  LoadShardBlock: 548.453 (24)
+  PetaboxLoader3.datanode: 557.832 (25)
+  load_resource: 348.529
+  PetaboxLoader3.resolve: 236.287
 -->
+
+<!-- <script>// Pokéneko v0.3 by https://james.nekoweb.org/
+// https://jamesschoch.github.io/Pokeneko/
+
+// Pokéneko is built using sprites from PDMCollab's Sprite Repository.
+// https://sprites.pmdcollab.org
+
+// This snippet uses sprites from https://sprites.pmdcollab.org/#/0570
+
+var pokemon = {"pokedex":"0570","shiny":false,"animData":{"Walk":{"$":{},"Name":"Walk","Index":"0","FrameWidth":"32","FrameHeight":"40","Durations":{"$":{},"Duration":["6","4","4","4","6"]},"animURL":"https://jamesschoch.github.io/Pokeneko/sprite/0570/Walk-Anim.png"},"Idle":{"$":{},"Name":"Idle","Index":"7","FrameWidth":"24","FrameHeight":"32","Durations":{"$":{},"Duration":["40","12","20","12"]},"animURL":"https://jamesschoch.github.io/Pokeneko/sprite/0570/Idle-Anim.png"}}};
+var trackerjson;
+    pokemon.state = "none";
+    var walkAnimInterval, idleAnimInterval;
+    var dirlisting;
+    var distancePhttps://retrojcities.neocities.org/files/buttonsx = 0;
+    var CurrentMouseXPostion;
+    var CurrentMouseYPostion;
+    var scale = 2;
+    var rotation = 0;
+    var rotations = 8;
+    var state;
+    var laststate;
+    var frameCounter;
+    var animPlaying = false;
+    var mouseIdleTime = 0;
+    var anglevar;
+
+    var sprite = document.createElement("div");
+    sprite.id = "sprite";
+    sprite.style.position = "fixed";
+    sprite.style.zIndex = "1000000";
+    sprite.style.width = "64px";
+    sprite.style.height = "64px";
+    sprite.style.pointerEvents = "none";
+    sprite.style.top = "50%";
+    sprite.style.left = "50%";
+
+    document.body.appendChild(sprite);
+
+    function getOffset(element) {
+        if (!element.getClientRects().length) {
+            return { top: 0, left: 0 };
+        }
+
+        var rect = element.getBoundingClientRect();
+        var win = element.ownerDocument.defaultView;
+        return (
+            {
+                top: rect.top + win.pageYOffset,
+                left: rect.left + win.pageXOffset
+            });
+    }
+
+    function timerIncrement() {
+        mouseIdleTime = mouseIdleTime + 1;
+    }
+
+    function updateDistanceRotation() {
+        var spriteX = getOffset(document.getElementById("sprite")).left + 32;
+        var spriteY = getOffset(document.getElementById("sprite")).top + 32;
+        distancePx = distance(spriteX, spriteY, CurrentMouseXPostion, CurrentMouseYPostion);
+        anglevar = angle360(spriteX, spriteY, CurrentMouseXPostion, CurrentMouseYPostion);
+        if (anglevar > 67.5 && anglevar < 112.5) {
+            rotation = 0;
+        } else if (anglevar > 22.5 && anglevar < 67.5) {
+            rotation = 1;
+        } else if (anglevar > 337.5 || anglevar < 22.5) {
+            rotation = 2;
+        } else if (anglevar > 292.5 && anglevar < 337.5) {
+            rotation = 3;
+        } else if (anglevar > 247.5 && anglevar < 292.5) {
+            rotation = 4;
+        } else if (anglevar > 202.5 && anglevar < 247.5) {
+            rotation = 5;
+        } else if (anglevar > 157.5 && anglevar < 202.5) {
+            rotation = 6;
+        } else if (anglevar > 112.5 && anglevar < 157.5) {
+            rotation = 7;
+        }
+    }
+
+    function addEvent(elm, evType, fn, useCapture) {
+        if (elm.addEventListener) {
+            elm.addEventListener(evType, fn, useCapture);
+            return true;
+        }
+        else if (elm.attachEvent) {
+            var r = elm.attachEvent('on' + evType, fn);
+            return r;
+        }
+        else {
+            elm['on' + evType] = fn;
+        }
+    }
+
+    document.onmousemove = function (event) {
+        CurrentMouseXPostion = event.pageX;
+        CurrentMouseYPostion = event.pageY;
+        updateDistanceRotation();
+        mouseIdleTime = 0;
+    }
+
+    function angle(cx, cy, ex, ey) {
+        var dy = ey - cy;
+        var dx = ex - cx;
+        var theta = Math.atan2(dy, dx);
+        theta *= 180 / Math.PI;
+
+        return theta;
+    }
+
+    function distance(cx, cy, ex, ey) {
+        var dx = cx - ex;
+        var dy = cy - ey;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    function angle360(cx, cy, ex, ey) {
+        var theta = angle(cx, cy, ex, ey);
+        if (theta < 0) theta = 360 + theta;
+        return theta;
+    }
+
+    function setSprite(animName, frame) {
+        var animData = pokemon.animData[animName];
+        var sprite = document.getElementById("sprite");
+        if (animName !== "Sleep") {
+            var rotations = 8;
+        } else {
+            var rotations = 1;
+        }
+        sprite.style.backgroundImage = "url(" + animData.animURL + ")";
+        sprite.style.backgroundSize = (animData.FrameWidth * scale * animData.Durations.Duration.length) + "px " + (animData.FrameHeight * scale * rotations) + "px";
+        sprite.style.width = animData.FrameWidth * scale + "px";
+        sprite.style.height = animData.FrameHeight * scale + "px";
+        sprite.style.backgroundPosition = (0 - ((animData.FrameWidth * (frame % animData.Durations.Duration.length)) * scale)) + "px " + (0 - ((rotation * animData.FrameHeight) * scale)) + "px";
+        sprite.style.imageRendering = "pixelated";
+
+    }
+
+    var runningAnim;
+    var runningAnimName = "";
+
+    function runAnim(animName) {
+        if (pokemon.pokedex) {
+            if (runningAnimName === animName) {
+                return;
+            } else {
+                clearInterval(runningAnim);
+                var frames = [];
+                for (var i = 0; i < pokemon.animData[animName].Durations.Duration.length; i++) {
+                    for (var j = 0; j < pokemon.animData[animName].Durations.Duration[i]; j++) {
+                        frames.push(i);
+                    }
+                }
+
+                runningAnimName = animName;
+                var i = 0;
+                runningAnim = setInterval(function () {
+                    setSprite(animName, frames[i]);
+                    i++;
+                    if (i == frames.length) {
+                        setSprite(animName, frames[i]);
+                        i = 0;
+                    }
+                }, 33);
+            }
+        }
+    }
+
+    var moveSprite = setInterval(function () {
+
+        if (pokemon.pokedex) {
+            if (distancePx >= 55) {
+                state = "Walk";
+                runAnim("Walk");
+
+            } else {
+                state = "Idle";
+                runAnim("Idle");
+            }
+            if (state == "Walk") {
+
+                var sprite = document.getElementById("sprite");
+                var spriteX = getOffset(document.getElementById("sprite")).left;
+                var spriteY = getOffset(document.getElementById("sprite")).top;
+
+                var angle = angle360(spriteX, spriteY, CurrentMouseXPostion, CurrentMouseYPostion);
+                var dx = Math.cos(angle * Math.PI / 180) * 4;
+                var dy = Math.sin(angle * Math.PI / 180) * 4;
+                sprite.style.left = spriteX + dx + "px";
+                sprite.style.top = spriteY + dy + "px";
+
+            }
+            updateDistanceRotation();
+
+            laststate = state;
+        }
+    }, 33);
+</script> -->
+<!-- SCM Music Player https://www.scmplayer.net -->
+<!-- <script type="text/javascript" src="https://www.scmplayer.net/script.js"> -->
+<!-- data-config="{'skin':'skins/cyber/skin.css','volume':43,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':[{'title':'Pix n%27 Love - Purple Groove','url':'https://github.com/GlitchyZorua/GlitchyZorua.github.io/raw/main/files/youtube_tBglvCnUOE8_audio.mp3'},{'title':'glaci%E6re - Two Months of Moments - 07 Confidence, Baby','url':'https://github.com/GlitchyZorua/GlitchyZorua.github.io/raw/main/files/sfx/glaciære -%20Two%20Months%20of%20Moments%20-%2007%20Confidence,%20Baby.mp3'},{'title':'glaci%E6re - Two Months of Moments - 04 Stars Forced To Shine','url':'https://github.com/GlitchyZorua/GlitchyZorua.github.io/raw/main/files/sfx/glaci%C3%A6re%20-%20Two%20Months%20of%20Moments%20-%2004%20Stars%20Forced%20To%20Shine.mp3'}]}" ></script>-->
+<!-- SCM Music Player script end -->
