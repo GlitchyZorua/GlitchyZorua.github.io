@@ -44,6 +44,10 @@
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/w/index.php?go=Go&search=",
       "disabled": false
+    },{
+      "name": "Wikipedia Reference Desk",
+      "url": "https://retrojcities.neocities.org/pages/wikird.html?search=",
+      "disabled": false
     },
     {
       "name": "MetaGer",
@@ -162,6 +166,30 @@
     },{
       "name": "OoCities.org",
       "url": "https://oocities.org/?q=h#gsc.tab=0&gsc.q=",
+      "disabled": false
+    },{
+      "name": "Mojeek",
+      "url": "https://www.mojeek.com/search?q=",
+      "disabled": false
+    },{
+      "name": "Mwmbl",
+      "url": "https://mwmbl.org/?q=",
+      "disabled": false
+    },{
+      "name": "Yep",
+      "url": "https://yep.com/web?q=",
+      "disabled": false
+    },{
+      "name": "Presearch",
+      "url": "https://presearch.com/search?q=",
+      "disabled": false
+    },{
+      "name": "Fynd",
+      "url": "https://fynd.bot/?search=",
+      "disabled": false
+    },{
+      "name": "Stract",
+      "url": "https://stract.com/search?ss=false&q=",
       "disabled": false
     }
   ]
