@@ -1,20 +1,19 @@
 // oneko.js: https://github.com/adryd325/oneko.js
 
 (function oneko() {
-// Function to get a cookie value
-    function getCookie(name) {
-        const nameEQ = name + "=";
-        const ca = document.cookie.split(';');
-        for (let c of ca) {
-            while (c.charAt(0) === ' ') c = c.substring(1);
-            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
-        }
-        return null;
-    }
+// Function to set a value in localStorage
+function setStorage(name, value) {
+    localStorage.setItem(name, value);
+}
+
+// Function to get a value from localStorage
+function getStorage(name) {
+    return localStorage.getItem(name);
+}
 
     // Check if Oneko should be disabled based on cookie
 
-    if (getCookie('feature2') === "true") {
+    if (getStorage('feature2') === "true") {
         return; // Exit if Oneko should be disabled
     }
 

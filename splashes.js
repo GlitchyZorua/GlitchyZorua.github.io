@@ -129,19 +129,17 @@ let date = new Date();
 let hours = date.getHours();
 let newformat = hours >= 12 ? 'PM' : 'AM';
 var splashess = splashes[Math.floor(Math.random() * splashes.length)];
-    function getCookie(name) {
-        const nameEQ = name + "=";
-        const ca = document.cookie.split(';');
-        for (let c of ca) {
-            while (c.charAt(0) === ' ') c = c.substring(1);
-            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
-        return null;
-        }
+// Function to set a value in localStorage
+function setStorage(name, value) {
+    localStorage.setItem(name, value);
+}
+
+// Function to get a value from localStorage
+function getStorage(name) {
+    return localStorage.getItem(name);
+}
+
+    if (getStorage('feature8') === "false") {
+        document.getElementById("quotes").innerHTML = `<i>${splashess}</i>`;
     }
-    if (document.cookie === "" || document.cookie === null) {
-    //document.write(fuckoff);
-document.getElementById("quotes").innerHTML = `<i>${splashess}</i>`;
-  } else if (getCookie('feature8') === "false") {
- document.getElementById("quotes").innerHTML = `<i>${splashess}</i>`;
-  }
 

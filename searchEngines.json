@@ -29,10 +29,18 @@
       "name": "DuckDuckGo",
       "url": "https://duckduckgo.com/?q=",
       "disabled": false
+    },{
+      "name": "DuckDuckGo (No AI)",
+      "url": "https://noai.duckduckgo.com/?ia=web&origin=funnel_home_website&t=h_&q=",
+      "disabled": false
     },
     {
       "name": "DuckDuckGo Lite",
       "url": "https://start.duckduckgo.com/lite/?q=",
+      "disabled": false
+    },{
+      "name": "DuckDuckGo HTML",
+      "url": "https://html.duckduckgo.com/html?q=",
       "disabled": false
     },
     {
@@ -190,6 +198,10 @@
     },{
       "name": "Stract",
       "url": "https://stract.com/search?ss=false&q=",
+      "disabled": false
+    },{
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?hl=en&as_sdt=0%252C5&q=",
       "disabled": false
     }
   ]
