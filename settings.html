@@ -9,6 +9,17 @@
          This makes it easier to make new pages for your site. -->
     <link href="./css.css" rel="stylesheet" type="text/css" media="all">
     <script src="features.js" defer></script>
+    <script>
+    const isLocalStorageEnabled = () => {
+  try {
+    const key = `__storage__test`;
+    window.localStorage.setItem(key, null);
+    window.localStorage.removeItem(key);
+    return true;
+  } catch (e) {
+    return false;
+  }
+};</script>
   </head>
 
 <div class="gbh" style="right:0"></div><table class="tb" style="clear:left" width="100%"><tr>
@@ -24,37 +35,40 @@
                                   </td></table><table border="0" cellpadding="0" cellspacing="0"><tr><td class="j"><br>
                                     Fine-tune your experience.<br><br>
                                     <script>
-if (!navigator.cookieEnabled){
-  document.write('<p style="color:red;">Error: Cookies aren\'t enabled. Changes you make will be absolutely pointless and will be discarded. Stop wasting your damn time here and either (a) enable javascript or (b) make an exception for this site if you haven\'t already, Otherwise you\'ll be disappointed.</p>')
+if (!isLocalStorageEnabled()){
+  document.write('<p style="color:red;">Error: Localstorage isn\'t enabled. Changes you make will be absolutely pointless and will be discarded. Stop wasting your damn time here and either (a) enable javascript or (b) make an exception for this site if you haven\'t already, Otherwise you\'ll be disappointed.</p>')
 }
 </script>
+<noscript><p style="color:red;">Error: Javascript isn't enabled. Changes you make will be absolutely pointless and will be discarded. Stop wasting your damn time here and either (a) enable javascript or (b) make an exception for this site if you haven't already, Otherwise you'll be disappointed.</p></noscript>
                                     <p> NOTE: Disabling these may require you to clear your cache. To do that, go to the home page and hold CTRL + SHIFT + R</p>
                                     <h2>Social</h2>
                                     <input type="checkbox" data-feature-number="4" disabled="true" data-feature-number="9"> Disable PartyKit Cursors (soon)</input>
-    </label>
+     </label>
+                                    <h2>Search</h2>
+                                    <label><input type="checkbox" data-feature-number="10" title="By default, RetroJCity remembers your last used search engine from the drop down menu. If you want it to always reset it to startpage, tick this box."> Don't remember last used search engine. (Resets back to Startpage)</input>
+                                    </label>
                                     <h2>Decorational</h2>
  
     <label>
-        <input type="checkbox" data-feature-number="1"> Disable eSheep
+        <input type="checkbox" data-feature-number="1" title="Hides the eSheep pet."> Disable eSheep
     </label><br>
     <label>
-        <input type="checkbox" data-feature-number="2"> Disable Oneko
+        <input type="checkbox" data-feature-number="2" title="Hides the oneko pet."> Disable Oneko
     </label><br>
     <label>
         <!--<input type="checkbox" data-feature-number="3"> Disable Leaky Ring
     </label><br>-->
-        <input type="checkbox" data-feature-number="5"> Pony Mode (no i'm not a brony) </input>
+        <input type="checkbox" data-feature-number="5" title="Spawns a bunch of ponies on the main page."> Pony Mode (no i'm not a brony) </input>
     </label><br>
             <input type="checkbox" data-feature-number="7"> Pony Mode (With SFX) (no i'm not a brony) </input>
-    </label><br>
+    </label><!--<br>
           <label><input type="checkbox" data-feature-number="6" disabled="true"> Always hide Webamp. Do not show it at all.</input>
+          -->
     </label><br>
-    <label><input type="checkbox" data-feature-number="8"> Hide Quotes</input>
+    <label><input type="checkbox" data-feature-number="8" title="Disable quotes that shows below the RetroJCity logo"> Hide Quotes</input>
     </label>
     </label><br>
-        <label><input type="checkbox" data-feature-number="10" disabled = "true"> Don't remember last used search engine. (Resets back to Startpage) (fucking broken)</input>
-    </label>
-    </label><br>
+        <label><input type="checkbox" data-feature-number="11" title="The shadow of the search bar shows random (funny) search queries. Disable this if you don't want it."> Disable typing animation for search</input></label>
     <h2> Music </h2>
             <label><input type="checkbox" data-feature-number="9" disabled="true"> Hide Radio (under construction)</input>
     </label><br>

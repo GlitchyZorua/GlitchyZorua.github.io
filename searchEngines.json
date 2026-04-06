@@ -4,6 +4,10 @@
       "name": "Startpage",
       "url": "https://www.startpage.com/sp/search?query=",
       "disabled": false
+    },{
+      "name": "Startpage (Onion)",
+      "url": "http://startpagel6srwcjlue4zgq3zevrujfaow726kjytqbbjyrswwmjzcqd.onion/sp/search?q=",
+      "disabled": false
     },
     {
       "name": "Google",
@@ -18,6 +22,14 @@
     {
       "name": "Melonland Forum",
       "url": "https://forum.melonland.net/index.php?action=search;advanced;search=",
+      "disabled": false
+    },{
+      "name": "Surf Club Search",
+      "url": "https://scholar.google.com/scholar?hl=en&as_sdt=0%252C5&q=",
+      "disabled": false
+    },{
+      "name": "Melonland Wiki",
+      "url": "https://scholar.google.com/scholar?hl=en&as_sdt=0%252C5&q=",
       "disabled": false
     },
     {
@@ -35,12 +47,16 @@
       "disabled": false
     },
     {
-      "name": "DuckDuckGo Lite",
+      "name": "DuckDuckGo (Lite)",
       "url": "https://start.duckduckgo.com/lite/?q=",
       "disabled": false
     },{
-      "name": "DuckDuckGo HTML",
+      "name": "DuckDuckGo (HTML)",
       "url": "https://html.duckduckgo.com/html?q=",
+      "disabled": false
+    },{
+      "name": "DuckDuckGo (Onion)",
+      "url": "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/?q=",
       "disabled": false
     },
     {
@@ -63,7 +79,7 @@
       "disabled": false
     },
     {
-      "name": "Veronica-2",
+      "name": "Veronica-2 (flood gap)",
       "url": "https://gopher.floodgap.com/gopher/gw?ss=gopher%253A%252F%252Fgopher.floodgap.com%253A70%252F7%252Fv2%252Fvs&sq=",
       "disabled": false
     },
@@ -202,6 +218,38 @@
     },{
       "name": "Google Scholar",
       "url": "https://scholar.google.com/scholar?hl=en&as_sdt=0%252C5&q=",
+      "disabled": false
+    },{
+      "name": "Ahmia (Onion)",
+      "url": "http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/search/?q=",
+      "disabled": false
+    },{
+      "name": "Ahmia (Clearnet)",
+      "url": "https://ahmia.fi/search/?q=",
+      "disabled": false
+    },{
+      "name": "OpenAlex",
+      "url": "https://openalex.org/works?search.title_and_abstract=",
+      "disabled": false
+    },{
+      "name": "CrossRef",
+      "url": "https://search.crossref.org/?from_ui=yes&q=",
+      "disabled": false
+    },{
+      "name": "Reddit",
+      "url": "https://www.reddit.com/search/?q=",
+      "disabled": false
+    },{
+      "name": "Reddit (Old)",
+      "url": "https://old.reddit.com/search/?q=",
+      "disabled": false
+    },{
+      "name": "Skynet",
+      "url": "https://pierrepapierciseaux.net/.skynet/?q=",
+      "disabled": false
+    },{
+      "name": "Steam",
+      "url": "https://store.steampowered.com/search?term=",
       "disabled": false
     }
   ]

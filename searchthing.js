@@ -1,24 +1,11 @@
-   // Function to set a cookie
-    function setCookie(name, value, days = 365) {
-        const date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
-        const expires = "; expires=" + date.toUTCString();
-        document.cookie = `${name}=${value}${expires}; path=/`;
-    }
+function setStorage(name, value) {
+    localStorage.setItem(name, value);
+}
 
-    // Function to get a cookie value
-    function getCookie(name) {
-        const nameEQ = name + "=";
-        const cookies = document.cookie.split(';');
-
-        for (let cookie of cookies) {
-            cookie = cookie.trim();
-            if (cookie.indexOf(nameEQ) === 0) {
-                return cookie.substring(nameEQ.length);
-            }
-        }
-        return null;
-    }
+// Function to get a value from localStorage
+function getStorage(name) {
+    return localStorage.getItem(name);
+}
 
     fetch('searchEngines.json')
         .then(response => response.json())
@@ -31,13 +18,14 @@
                 return;
             }
 
+
             // Get the last selected engine from cookie (default: "Startpage")
-            const lastEngine = getCookie("lastSearchEngine") || "Startpage";
+            var lastEngine = getStorage("lastSearchEngine") || "Startpage";
 
             // Optional feature: override selection if feature10 is true
-            if (getCookie("feature10") === "true") {
+            if (getStorage("feature10") === "true") {
                 lastEngine = "Startpage";
-                setCookie("lastSearchEngine", lastEngine);
+                setStorage("lastSearchEngine", lastEngine);
             }
 
             // Populate the dropdown
@@ -55,10 +43,9 @@
                 searchEngineSelect.appendChild(option);
             });
 
-            // Save user selection to cookie when changed
             searchEngineSelect.addEventListener("change", function () {
                 const selectedName = this.options[this.selectedIndex].text;
-                setCookie("lastSearchEngine", selectedName);
+                setStorage("lastSearchEngine", selectedName);
             });
 
         })

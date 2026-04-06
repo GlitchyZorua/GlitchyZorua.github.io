@@ -6,7 +6,8 @@
     <meta name="description" content="RetroJCity. GlitchyZorua's corner of the World Wide Web!">
     <link rel="stylesheet" type="text/css" href="css.css">
     <meta name="theme-color" content="black"/>
-    <script src="myjs.js"></script>
+    <script src="features.js"></script>
+        <script src="myjs.js"></script>
     <script src="https://adrianotiger.github.io/web-esheep/dist/esheep.min.js"></script>
     <!-- INTERNAL CSS STYLING -->
     <style>
@@ -136,6 +137,19 @@
           }
         }
         /*/
+function setStorage(name, value) {
+    localStorage.setItem(name, value);
+}
+
+// Function to get a value from localStorage
+function getStorage(name) {
+    return localStorage.getItem(name);
+}
+    if (getStorage('feature1') === "false") {
+    var sheep = new eSheep(); 
+    sheep.Start();  
+    }
+    applyFeatures()
     </script>
     <script src="oneko.js"></script>
     <!-- <script src="nochrm.js"></script> -->
@@ -189,9 +203,8 @@
               &nbsp;&nbsp;&nbsp;&nbsp;<b><a href="javascript:alert('soon.')" class="q" onclick="this.blur();return togDisp(event)">more&nbsp;&raquo;</a></b>
               <span name="more" id="more" style="display:none;position:absolute;background:#000;border:1px solid #369;margin:-.5ex 2ex;padding:0 0 .5ex .8ex;width:16ex;line-height:1.9;z-index:1000" onclick="stopB(event)">
                 <a href="#" onclick="return togDisp(event)"><img border="0" src="x2.gif" width="12" height="12" alt="Close menu" align="right" hspace="4" vspace="4"></a>
-                <a class="q" href="https://write.as/">Make Blogs</a><br>
-                <a class="q" href="/pages/articles/articles.html">My Blogs</a><br>
-                <a class="q" href="microblogs.html">My Micro-Blogs</a><br>
+                <a class="q" href="/pages/articles/articles.html">Blogs</a><br>
+                <a class="q" href="/pages/microblogs.html">Micro-Blogs</a><br>
                 <a class="q" href="games.html">Games</a><br>
                 <a class="q" href="archive.html">Archive</a><br>
                 <a class="q" href="https://openlibrary.org/">Books</a><br> <!-- rip zlib -->
@@ -244,186 +257,12 @@
         document.getElementById("outputagent").textContent = userAgent;
       </script>
 
-      <script>
-        var highlightElement;
-
-        function updateHighlightTime() {
-          var time = new Date();
-          var h = time.getHours();
-          var m = time.getMinutes();
-          var s = time.getSeconds();
-
-          // Format time with leading zeros
-          h = h.toString().padStart(2, "0");
-          m = m.toString().padStart(2, "0");
-          s = s.toString().padStart(2, "0");
-
-          // Combine formatted time for hex color
-          var hex = "#" + h + m + s;
-
-          // Get the element to be highlighted (assuming an element with ID "time")
-          highlightElement = document.getElementById("time");
-
-          // Create a span element to wrap the highlighted text
-          var highlightSpan = document.createElement("span");
-          highlightSpan.textContent = '#'+ h + m + s;
-          highlightSpan.style.backgroundColor = hex; // Set background for highlighting
-
-          // Clear previous content (if any)
-          highlightElement.innerHTML = "";
-
-          // Append the highlighted time within the element
-          highlightElement.appendChild(highlightSpan);
-        }
-
-        // Assuming you have an element with ID "time"
-        highlightElement = document.getElementById("time");
-
-        // Set initial highlight on page load
-        //updateHighlightTime();
-
-        // Update highlight every second
-        setInterval(updateHighlightTime, 1000);
-
-          function startTime() {
-          const today = new Date();
-          let h = today.getHours();
-          let m = today.getMinutes();
-          let s = today.getSeconds();
-          let ampm = h >= 12 ? 'PM' : 'AM';
-          m = checkTime(m);
-          s = checkTime(s);
-          document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s+" "+ampm;
-          
-            // get a new date (locale machine date time)
-        var date = new Date();
-        // get the date as a string
-        var n = date.toDateString();
-        // get the time as a string
-        // var time = date.toLocaleTimeString();
-
-        // find the html element with the id of time
-        // set the innerHTML of that element to the date a space the time
-        document.getElementById('date').innerHTML = n;
-          setTimeout(startTime, 1000);
-        }
-        function checkTime(i) {
-          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-          return i;
-        }
-        document.addEventListener("DOMContentLoaded", function() {
-            var url = document.getElementById('url');
-            var gowww = document.getElementsByName('gowww')[0];
-            var gonc = document.getElementsByName('gonc')[0];
-            var luck = document.getElementsByName('luck')[0];
-
-            function searchstartpage() {
-              if (url.value) {
-                window.location.assign("https://www.startpage.com/sp/search?query=" + encodeURI(url.value));
-              }
-            }
-            function searchwww() {
-              if (url.value) {
-               // const searchUrl = searchEngineSelect.value; + encodeURI(url.value);
-               if (searchEngineSelect.value === "Google (No AI)"){
-                 //alert('Click on the "Web" tab in the google search');
-                 window.location.assign(searchEngineSelect.value + encodeURI(url.value) + "&udm=14");
-               } else {
-                window.location.assign(searchEngineSelect.value + encodeURI(url.value));
-               }
-              }
-            }
-            function searchneocities() {
-              if (url.value) {
-                window.location.assign("https://neocities.org/browse?sort_by=followers&tag=" + encodeURI(url.value));
-              }
-            }
-
-            function searchluck() {
-              if (url.value === "the cake is a lie") {
-                window.location.assign('https://www.youtube.com/watch?v=JAw3V8ScLeI');
-                return;
-              }
-              if (url.value === "fandom") {
-                window.location.assign('https://www.youtube.com/watch?v=qcfuA_UAz3I');
-                return;
-              }
-              if (url.value === "orgin") {
-                window.location.assign('https://windows93.net');
-                return;
-              }
-              if (url.value === "list") {
-                window.location.assign('https://github.com/GlitchyZorua/GlitchyZorua.github.io/blob/main/projects/random/neocities/random.html');
-                return;
-              }
-              if (url.value === "ding"){
-                alert('fries are ready.');
-                return;
-              }
-              if (url.value == "computer"){
-                window.location.assign('https://www.youtube.com/watch?v=aAtF-Zzdnc8')
-                return;
-              }
-              if (url.value == "surprise"){
-                window.location.assign('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-                return;
-              }
-              if (url.value == "sdjlkfgjfsdlkgfdjglfkdjgfdlkg") {
-                alert('you\'ve looked in the code. congrats. nothing will happen.');
-                return;
-              }
-              if (url.value == "shoot em up"){
-                var KICKASSVERSION='2.0'
-                   var s = document.createElement('script')
-                   s.type='text/javascript'
-                   document.body.appendChild(s)
-                   s.src='//hi.kickassapp.com/kickass.js'
-                   void(0); 
-                   return;
-              }
-              if (url.value == "make text go boom boom"){
-                 (function () {var s = document.createElement('script');s.setAttribute('src', 'https://fontbomb.ilex.ca/js/main.js');document.body.appendChild(s);}());
-                return
-              }
-              if (url.value == "best cooking site"){
-              window.location.assign("https://based.cooking/");
-              return
-              }
-                window.location.assign("https://GlitchyZorua.github.io/projects/random/neocities/random.html");
-
-            }
-            //gowww.addEventListener("click", searchstartpage);
-            gowww.addEventListener("click", searchwww);
-            gonc.addEventListener("click", searchneocities);
-            luck.addEventListener("click", searchluck);
-
-        url.addEventListener('keydown', (event) => {
-
-              if (event.shiftKey && event.key === "Enter"){
-                    searchneocities();
-               return;
-              }
-              if (!event.shiftKey && event.key === 'Enter') {
-                searchwww();
-                return;
-              }
-            });
-          });
-          /*/
-          if (event.shiftKey) {
-            keys.Shift = true;
-          }
-          if (event.key === "Enter") {
-            keys.Enter = true;
-          }
-        /*/
-      </script>
 
       <div id="clockfont">
         <time>
           <div id="clock" class="clock"></div>
         </time> 
-      </div>     
+      </div>
       <br />
 
       <script src="https://cdn.jsdelivr.net/npm/time-moji@latest/time-moji.js">

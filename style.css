@@ -222,12 +222,19 @@ a:visited { color:#ba5fa5; }
   text-align: center;
   margin: 5px auto;
 }
+ 
+.time-details {
+    display: flex;
+    flex-direction: column; /* Stacks S and AMPM vertically */
+    font-size: 18px; /* Smaller size for the stack */
+    margin-left: 10px;
+    line-height: 1;
+}
 
 @font-face {
     font-family: "clockfont";
     src: url("alarm_clock.ttf");
  }
-
 
 .clock {
  font-family: clockfont;
@@ -262,3 +269,4 @@ a:visited { color:#ba5fa5; }
             gap: 5px;
             margin: 20px 0;
         }
+
