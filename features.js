@@ -14,12 +14,14 @@ function applyFeatures() {
     const eSheepDisabled = getStorage('feature1') === "false";
     const onekoDisabled = getStorage('feature2') === "false";
     const leakyDisabled = getStorage('feature3') === "false";
-    const partykitDisabled = getStorage('feature4') === "false";
+    //const partykitDisabled = getStorage('feature4') === "false";
     const ponyMode = getStorage('feature5') === "false";
     const hideWebamp = getStorage('feature6') === "false";
     const ponyModewithSFX = getStorage('feature7') === "false";
     const disableQuote = getStorage('feature8') === "false";
+    //const disablePartykit = getStorage('feature9') === "false";
     const dontrememberSearch = getStorage('feature10') === "false";
+    const funnySearch = getStorage('feature11') === "false";
 
     if (eSheepDisabled === true) { 
         console.log('eSheep is disabled');
@@ -74,6 +76,12 @@ function applyFeatures() {
     } else {
         console.log("Don't Remember search is disabled");
     }
+    if (funnySearch === true) {
+        console.log("funnySearch is enabled");
+    } else {
+        console.log("funnySearch is disabled");
+    }
+
 }
 
 // Function to initialize checkbox states from localStorage

@@ -151,6 +151,7 @@ function getStorage(name) {
     }
     applyFeatures()
 
+ 
     </script>
     <script src="oneko.js"></script>
     <!-- <script src="nochrm.js"></script> -->
@@ -160,7 +161,6 @@ function getStorage(name) {
     <link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
     -->
     <script defer src="https://melonking.net/scripts/swatchTime.js"></script>
-    <script src="https://cursor-party.glitchyzorua.partykit.dev/cursors.js"></script>
     <script>console.log("┬ ┬┌─┐┬  ┬  ┌─┐┬\n├─┤├┤ │  │  │ ││\n┴ ┴└─┘┴─┘┴─┘└─┘o");</script>
 
     <!--<div id="banner-small" style="flex-direction: column; text-align: center; display: none; color: red;"><p><b>Stop using Chromium browsers, Google is trying to kill off ad and tracker blockers! </b><a href="https://gianmarco.gg/blinky"><b>Learn more</b></a> or <a onclick="hideNavWarn()"><b>close</b></a>.</p></div>-->
@@ -361,10 +361,7 @@ function getStorage(name) {
          window.location.assign(searchEngineSelect.value + encodeURI(url.value) + "&udm=14");
          return;
        }
-        if (searchEngineSelect.value === "Wikipedia Reference Desk") {
-         window.location.assign(`https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(url.value)}&prefix=Wikipedia%3AReference+desk%2FArchives&fulltext=Search+the+archives&fulltext=Search&ns0=1`);
-             return;
-        }
+
       if (searchEngineSelect.value === "Skynet"){
          window.location.assign(searchEngineSelect.value + encodeURI(url.value) + "&lang=en");
        } else {

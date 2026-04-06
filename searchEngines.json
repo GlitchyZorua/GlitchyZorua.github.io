@@ -58,13 +58,11 @@
       "name": "DuckDuckGo (Onion)",
       "url": "https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/?q=",
       "disabled": false
-    },
-    {
+    },{
       "name": "FrogFind",
       "url": "https://frogfind.com/?q=",
       "disabled": false
-    },
-    {
+    },{
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/w/index.php?go=Go&search=",
       "disabled": false
@@ -72,8 +70,55 @@
       "name": "Wikipedia Reference Desk",
       "url": "https://retrojcities.neocities.org/pages/wikird?q=",
       "disabled": false
-    },
-    {
+    },{
+      "name": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/w/index.php?search=",
+      "disabled": false
+    },{
+      "name": "Wikibooks",
+      "url": "https://en.wikibooks.org/wiki/Special:Search?search=",
+      "disabled": false
+    },{
+      "name": "Mediawiki Meta Wiki",
+      "url": "https://meta.wikimedia.org/w/index.php?search=",
+      "disabled": false
+    },{
+      "name": "Wikiversity",
+      "url": "https://en.wikiversity.org/wiki/Special:Search?search=",
+      "disabled": false
+    },{
+      "name": "Wikivoyage",
+      "url": "https://en.wikivoyage.org/wiki/",
+      "disabled": false
+    },{
+      "name": "Wikinews",
+      "url": "https://en.wikinews.org/wiki/Special:Search?search=",
+      "disabled": false
+    },{
+      "name": "Wikiquote",
+      "url": "https://en.wikiquote.org/wiki/Special:Search?search=",
+      "disabled": false
+    },{
+      "name": "Wikispecies",
+      "url": "https://species.wikimedia.org/w/index.php?search=",
+      "disabled": false
+    },{
+      "name": "Wiktionary",
+      "url": "https://en.wiktionary.org/w/index.php?search=",
+      "disabled": false
+    },{
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/w/index.php?search=",
+      "disabled": false
+    },{
+      "name": "Wikifunctions",
+      "url": "https://www.wikifunctions.org/w/index.php?search=",
+      "disabled": false
+    },{
+      "name": "Wikisource",
+      "url": "https://en.wikisource.org/w/index.php?search=",
+      "disabled": false
+    },{
       "name": "MetaGer",
       "url": "https://metager.org/meta/meta.ger3?eingabe=",
       "disabled": false
@@ -266,6 +311,18 @@
     },{
       "name": "Minecraft Wiki",
       "url": "https://minecraft.wiki/?title=Special:Search&fulltext=1&search=",
+      "disabled": false
+    },{
+      "name": "iii",
+      "url": "https://iii.social/search?=",
+      "disabled": false
+    },{
+      "name": "Hacker News Search",
+      "url": "https://hn.algolia.com/?q=",
+      "disabled": false
+    },{
+      "name": "JStor",
+      "url": "https://www.jstor.org/action/doBasicSearch?Query=",
       "disabled": false
     }
   ]

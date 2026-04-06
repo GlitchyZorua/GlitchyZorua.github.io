@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-<script src="https://cursor-party.glitchyzorua.partykit.dev/cursors.js"></script>
+<script>
+if (!getStorage('feature9') === "true") {
+    const script = document.createElement("script");
+    script.src = "https://cursor-party.glitchyzorua.partykit.dev/cursors.js";
+    script.async = true;
+    document.head.appendChild(script);
+  }
+</script>
 </body>
   <head>
     <meta charset="UTF-8">
