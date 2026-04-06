@@ -70,7 +70,7 @@
       "disabled": false
     },{
       "name": "Wikipedia Reference Desk",
-      "url": "https://retrojcities.neocities.org/pages/wikird.html?search=",
+      "url": "https://retrojcities.neocities.org/pages/wikird?q=",
       "disabled": false
     },
     {
@@ -250,6 +250,22 @@
     },{
       "name": "Steam",
       "url": "https://store.steampowered.com/search?term=",
+      "disabled": false
+    },{
+      "name": "GoG",
+      "url": "https://www.gog.com/de/games?query=",
+      "disabled": false
+    },{
+      "name": "itch.io",
+      "url": "https://itch.io/search?q=",
+      "disabled": false
+    },{
+      "name": "Sepia Search",
+      "url": "https://sepiasearch.org/search?search=",
+      "disabled": false
+    },{
+      "name": "Minecraft Wiki",
+      "url": "https://minecraft.wiki/?title=Special:Search&fulltext=1&search=",
       "disabled": false
     }
   ]
