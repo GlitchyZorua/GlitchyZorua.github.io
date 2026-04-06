@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<script>
+const params = new URLSearchParams(window.location.search);
+const query = params.get("query");
+location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+encodeURIComponent(query)+"&prefix=Wikipedia%3AReference+desk%2FArchives&fulltext=Search+the+archives&fulltext=Search&ns0=1")
+</script>
+</html>
