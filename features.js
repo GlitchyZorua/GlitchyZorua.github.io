@@ -46,8 +46,6 @@ function applyFeatures() {
     } else {
         console.log('leaky is enabled');
     }
-
-
     if (ponyMode === true) {
         console.log('pony mode is enabled');
     } else {
