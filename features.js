@@ -47,11 +47,6 @@ function applyFeatures() {
         console.log('leaky is enabled');
     }
 
-    if (partykitDisabled === true) {
-        console.log('partykit is disabled');
-    } else {
-        console.log('partykit is enabled');
-    }
 
     if (ponyMode === true) {
         console.log('pony mode is enabled');
