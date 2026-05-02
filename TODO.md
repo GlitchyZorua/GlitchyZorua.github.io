@@ -1,5 +1,5 @@
 # todo list
 
 - Rewrite all of the vibe coded scripts
-- Accessiblity 
+- Accessibility 
 - Mobile Optimzations 
