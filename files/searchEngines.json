@@ -221,10 +221,6 @@
       "url": "https://www.directhit.com/web?q=",
       "disabled": false
     },{
-      "name": "Ask.com",
-      "url": "https://www.ask.com/web?q=",
-      "disabled": false
-    },{
       "name": "Brave Search",
       "url": "https://search.brave.com/search?q=",
       "disabled": false
