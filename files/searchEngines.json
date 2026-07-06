@@ -320,6 +320,18 @@
       "name": "JStor",
       "url": "https://www.jstor.org/action/doBasicSearch?Query=",
       "disabled": false
+    },{
+      "name":"AnswerOverflow",
+      "url": "https://www.answeroverflow.com/?q=",
+      "disabled": false
+    },{
+      "name":"Stack Exchange",
+      "url": "https://stackexchange.com/search?q=",
+      "disabled": false
+    },{
+      "name":"Stack Overflow",
+      "url": "https://www.answeroverflow.com/?q=",
+      "disabled": false
     }
   ]
 }
