@@ -1,0 +1,5 @@
+<script>
+const params = new URLSearchParams(window.location.search);
+const query = params.get("q");
+location.replace("https://www.google.com/search?q="+encodeURIComponent(query)+"(intext:"modlog" & "instances" & "docs" & "code" & "join-lemmy" | intext:"powered by mbin" | intext:"part of the decentralized social network powered by mastodon" | intext:"powered by peertube")")
+</script>
