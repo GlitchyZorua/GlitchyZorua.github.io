@@ -380,6 +380,26 @@
       "name":"ForumScout Search",
       "url": "https://forumscout.app/search?q=",
       "disabled": false
+    },{
+      "name":"Facebook",
+      "url": "https://www.facebook.com/search/top/?q=",
+      "disabled": false
+    },{
+      "name":"Nitter",
+      "url": "https://nitter.net/search?f=tweets&q=",
+      "disabled": false
+    },{
+      "name":"Twitter (X)",
+      "url": "https://twitter.com/search?q=",
+      "disabled": false
+    },{
+      "name":"Bluesky",
+      "url": "https://bsky.app/search?q=",
+      "disabled": false
+    },{
+      "name":"Fediverse Search (Google)",
+      "url": "../pages/fedisearch.html?q=",
+      "disabled": false
     }
   ]
 }
