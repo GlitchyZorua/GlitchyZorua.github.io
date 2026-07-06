@@ -91,7 +91,7 @@
       "url": "https://en.wikivoyage.org/wiki/",
       "disabled": false
     },{
-      "name": "Wikinews",
+      "name": "Wikinews (Archived)",
       "url": "https://en.wikinews.org/wiki/Special:Search?search=",
       "disabled": false
     },{
@@ -335,6 +335,50 @@
     },{
       "name":"Kagi",
       "url": "https://kagi.com/search?q=",
+      "disabled": false
+    },{
+      "name":"bilibili (Chinese)",
+      "url": "https://search.bilibili.com/all?keyword=",
+      "disabled": false
+    },{
+      "name":"bilibili (International)",
+      "url": "https://www.bilibili.tv/en/search-result?q=",
+      "disabled": false
+    },{
+      "name":"NicoNico (aka NicoVideo)",
+      "url": "https://www.nicovideo.jp/search/",
+      "disabled": false
+    },{
+      "name":"Bandcamp",
+      "url": "https://bandcamp.com/search?q=",
+      "disabled": false
+    },{
+      "name":"TikTok",
+      "url": "https://www.tiktok.com/search/user?q=",
+      "disabled": false
+    },{
+      "name":"Douyin (Chinese TikTok) (Login required)",
+      "url": "https://www.douyin.com/search/",
+      "disabled": false
+    },{
+      "name":"Douyin (Without login?)",
+      "url": "https://so.douyin.com/s?search_entrance=",
+      "disabled": false
+    },{
+      "name":"Odysee",
+      "url": "https://odysee.com/$/search?q=",
+      "disabled": false
+    },{
+      "name":"Newgrounds",
+      "url": "https://www.newgrounds.com/search/summary?suitabilities=e&terms=",
+      "disabled": false
+    },{
+      "name":"Newgrounds (Forums)",
+      "url": "https://www.newgrounds.com/search/conduct/bbs?suitabilities=e&c=3002&terms=",
+      "disabled": false
+    },{
+      "name":"ForumScout Search",
+      "url": "https://forumscout.app/search?q=",
       "disabled": false
     }
   ]
