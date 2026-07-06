@@ -357,11 +357,11 @@
       "url": "https://www.tiktok.com/search/user?q=",
       "disabled": false
     },{
-      "name":"Douyin (Chinese TikTok) (Login required)",
+      "name":"Douyin (China TikTok)",
       "url": "https://www.douyin.com/search/",
       "disabled": false
     },{
-      "name":"Douyin (Without login?)",
+      "name":"Douyin (Without sign up)",
       "url": "https://so.douyin.com/s?search_entrance=",
       "disabled": false
     },{
