@@ -408,6 +408,10 @@
       "name":"SteamDB",
       "url": "https://steamdb.info/search/?a=all&q=",
       "disabled": false
+    },{
+      "name":"Steam250",
+      "url": "https://club.steam250.com/search?q=",
+      "disabled": false
     }
   ]
 }
