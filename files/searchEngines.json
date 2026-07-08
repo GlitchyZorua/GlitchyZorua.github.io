@@ -400,6 +400,10 @@
       "name":"Fediverse Search (Google)",
       "url": "../pages/fedisearch.html?q=",
       "disabled": false
+    },{
+      "name":"Steam Forums",
+      "url": "https://steamcommunity.com/discussions/forum/search/?q=",
+      "disabled": false
     }
   ]
 }
