@@ -448,6 +448,10 @@
       "name":"mozillaZine Forums",
       "url": "https://cse.google.com/cse?cx=003258325049489668794%253Aru2dpahviq8&ie=UTF-8&q=",
       "disabled": false
+    },{
+      "name":"osu! forums",
+      "url": "https://osu.ppy.sh/home/search?mode=forum_post&query=",
+      "disabled": false
     }
   ]
 }
