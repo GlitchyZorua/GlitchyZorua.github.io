@@ -20,6 +20,11 @@
       "disabled": false
     },
     {
+      "name": "Google Answers",
+      "url": "https://www.google.com/search?as_sitesearch=answers.google.com&q=",
+      "disabled": false
+    },
+    {
       "name": "Melonland Forum",
       "url": "https://forum.melonland.net/index.php?action=search;advanced;search=",
       "disabled": false
@@ -142,10 +147,18 @@
       "name": "osu!",
       "url": "https://osu.ppy.sh/beatmapsets?q=",
       "disabled": false
+    },{
+      "name":"osu! forums",
+      "url": "https://osu.ppy.sh/home/search?mode=forum_post&query=",
+      "disabled": false
     },
     {
       "name": "GitHub",
       "url": "https://github.com/search?q=",
+      "disabled": false
+    },{
+      "name":"GitHub Gist",
+      "url": "https://gist.github.com/search?q=",
       "disabled": false
     },
     {
@@ -186,11 +199,6 @@
     {
       "name": "s.matdoes.dev",
       "url": "https://s.matdoes.dev/search?q=",
-      "disabled": false
-    },
-    {
-      "name": "Google Answers",
-      "url": "https://www.google.com/search?as_sitesearch=answers.google.com&q=",
       "disabled": false
     },{
       "name": "Marginalia Search",
@@ -291,6 +299,18 @@
     },{
       "name": "Steam",
       "url": "https://store.steampowered.com/search?term=",
+      "disabled": false
+    },{
+      "name":"Steam Forums",
+      "url": "https://steamcommunity.com/discussions/forum/search/?q=",
+      "disabled": false
+    },{
+      "name":"SteamDB",
+      "url": "https://steamdb.info/search/?a=all&q=",
+      "disabled": false
+    },{
+      "name":"Steam250",
+      "url": "https://club.steam250.com/search?q=",
       "disabled": false
     },{
       "name": "GoG",
@@ -401,18 +421,6 @@
       "url": "../pages/fedisearch.html?q=",
       "disabled": false
     },{
-      "name":"Steam Forums",
-      "url": "https://steamcommunity.com/discussions/forum/search/?q=",
-      "disabled": false
-    },{
-      "name":"SteamDB",
-      "url": "https://steamdb.info/search/?a=all&q=",
-      "disabled": false
-    },{
-      "name":"Steam250",
-      "url": "https://club.steam250.com/search?q=",
-      "disabled": false
-    },{
       "name":"Wolfram Community",
       "url": "https://community.wolfram.com/search?p_p_id=search_WAR_searchportlet&p_p_lifecycle=0&p_p_col_pos=3&p_p_col_count=4&_search_WAR_searchportlet_filter=&_search_WAR_searchportlet_start=0&_search_WAR_searchportlet_limit=20&_search_WAR_searchportlet_mvcPath=%2Fsearch.jsp&keywords=",
       "disabled": false
@@ -429,10 +437,6 @@
       "url": "https://flipboard.com/search/",
       "disabled": false
     },{
-      "name":"GitHub Gist",
-      "url": "https://gist.github.com/search?q=",
-      "disabled": false
-    },{
       "name":"Pastebin (Login Required)",
       "url": "https://pastebin.com/search?q=",
       "disabled": false
@@ -447,10 +451,6 @@
     },{
       "name":"mozillaZine Forums",
       "url": "https://cse.google.com/cse?cx=003258325049489668794%253Aru2dpahviq8&ie=UTF-8&q=",
-      "disabled": false
-    },{
-      "name":"osu! forums",
-      "url": "https://osu.ppy.sh/home/search?mode=forum_post&query=",
       "disabled": false
     }
   ]
