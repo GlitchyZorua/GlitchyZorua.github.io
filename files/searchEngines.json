@@ -412,6 +412,42 @@
       "name":"Steam250",
       "url": "https://club.steam250.com/search?q=",
       "disabled": false
+    },{
+      "name":"Wolfram Community",
+      "url": "https://community.wolfram.com/search?p_p_id=search_WAR_searchportlet&p_p_lifecycle=0&p_p_col_pos=3&p_p_col_count=4&_search_WAR_searchportlet_filter=&_search_WAR_searchportlet_start=0&_search_WAR_searchportlet_limit=20&_search_WAR_searchportlet_mvcPath=%2Fsearch.jsp&keywords=",
+      "disabled": false
+    },{
+      "name":"Answers.com",
+      "url": "https://www.answers.com/search?q=",
+      "disabled": false
+    },{
+      "name":"Quora",
+      "url": "https://www.quora.com/search?q=",
+      "disabled": false
+    },{
+      "name":"Flipboard",
+      "url": "https://flipboard.com/search/",
+      "disabled": false
+    },{
+      "name":"GitHub Gist",
+      "url": "https://gist.github.com/search?q=",
+      "disabled": false
+    },{
+      "name":"Pastebin (Login Required)",
+      "url": "https://pastebin.com/search?q=",
+      "disabled": false
+    },{
+      "name":"SoyletNews",
+      "url": "https://soylentnews.org/search.pl?tid=&query=",
+      "disabled": false
+    },{
+      "name":"Mozilla Discourse",
+      "url": "https://discourse.mozilla.org/search?q=",
+      "disabled": false
+    },{
+      "name":"mozillaZine Forums",
+      "url": "https://cse.google.com/cse?cx=003258325049489668794%253Aru2dpahviq8&ie=UTF-8&q=",
+      "disabled": false
     }
   ]
 }
